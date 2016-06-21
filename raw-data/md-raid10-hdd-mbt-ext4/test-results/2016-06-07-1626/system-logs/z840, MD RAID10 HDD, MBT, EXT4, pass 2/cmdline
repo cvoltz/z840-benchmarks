@@ -1,0 +1,1 @@
+BOOT_IMAGE=/vmlinuz-3.10.0-327.el7.x86_64 root=UUID=d6daa6bf-a726-4439-8841-763cddcb1ed4 ro crashkernel=auto rd.md.uuid=49a54014:34fc5ab0:94a5326f:f5648655 rd.md.uuid=627134cd:5d99852f:e21618d4:a058b09f rd.md.uuid=665fcb09:9f85271c:8f6ca707:35c5df51 rhgb quiet LANG=en_US.UTF-8

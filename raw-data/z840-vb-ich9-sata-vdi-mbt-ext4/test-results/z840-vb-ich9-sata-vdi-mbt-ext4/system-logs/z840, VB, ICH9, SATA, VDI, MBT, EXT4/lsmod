@@ -1,0 +1,91 @@
+Module                  Size  Used by
+bnep                   19704  2 
+bluetooth             372944  5 bnep
+rfkill                 26536  3 bluetooth
+fuse                   87741  3 
+xt_CHECKSUM            12549  1 
+ipt_MASQUERADE         12678  3 
+nf_nat_masquerade_ipv4    13412  1 ipt_MASQUERADE
+tun                    27141  1 
+ip6t_rpfilter          12546  1 
+ip6t_REJECT            12939  2 
+ipt_REJECT             12541  4 
+xt_conntrack           12760  8 
+ebtable_nat            12807  0 
+ebtable_broute         12731  0 
+bridge                119562  1 ebtable_broute
+stp                    12976  1 bridge
+llc                    14552  2 stp,bridge
+ebtable_filter         12827  0 
+ebtables               30913  3 ebtable_broute,ebtable_nat,ebtable_filter
+ip6table_nat           12864  1 
+nf_conntrack_ipv6      18738  5 
+nf_defrag_ipv6         34768  1 nf_conntrack_ipv6
+nf_nat_ipv6            14131  1 ip6table_nat
+ip6table_mangle        12700  1 
+ip6table_security      12710  1 
+ip6table_raw           12683  1 
+ip6table_filter        12815  1 
+ip6_tables             27025  5 ip6table_filter,ip6table_mangle,ip6table_security,ip6table_nat,ip6table_raw
+iptable_nat            12875  1 
+nf_conntrack_ipv4      14862  5 
+nf_defrag_ipv4         12729  1 nf_conntrack_ipv4
+nf_nat_ipv4            14115  1 iptable_nat
+nf_nat                 26146  3 nf_nat_ipv4,nf_nat_ipv6,nf_nat_masquerade_ipv4
+nf_conntrack          105745  7 nf_nat,nf_nat_ipv4,nf_nat_ipv6,xt_conntrack,nf_nat_masquerade_ipv4,nf_conntrack_ipv4,nf_conntrack_ipv6
+iptable_mangle         12695  1 
+iptable_security       12705  1 
+iptable_raw            12678  1 
+iptable_filter         12810  1 
+vboxsf                 39741  0 
+dm_mirror              22135  0 
+dm_region_hash         20862  1 dm_mirror
+dm_log                 18411  2 dm_region_hash,dm_mirror
+dm_mod                113292  2 dm_log,dm_mirror
+crc32_pclmul           13113  0 
+ghash_clmulni_intel    13259  0 
+aesni_intel            69884  0 
+lrw                    13286  1 aesni_intel
+gf128mul               14951  1 lrw
+ppdev                  17671  0 
+glue_helper            13990  1 aesni_intel
+vboxguest             297222  6 vboxsf
+ablk_helper            13597  1 aesni_intel
+iTCO_wdt               13480  0 
+iTCO_vendor_support    13718  1 iTCO_wdt
+cryptd                 20359  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+lpc_ich                21073  0 
+parport_pc             28165  0 
+sg                     40721  0 
+parport                42348  2 ppdev,parport_pc
+i2c_piix4              22106  0 
+i2c_core               40582  1 i2c_piix4
+mfd_core               13435  1 lpc_ich
+video                  24400  0 
+pcspkr                 12718  0 
+nfsd                  302418  1 
+auth_rpcgss            59343  1 nfsd
+nfs_acl                12837  1 nfsd
+lockd                  93600  1 nfsd
+grace                  13295  2 nfsd,lockd
+sunrpc                300464  7 nfsd,auth_rpcgss,lockd,nfs_acl
+ip_tables              27240  5 iptable_security,iptable_filter,iptable_mangle,iptable_nat,iptable_raw
+ext4                  578819  2 
+mbcache                14958  1 ext4
+jbd2                  102940  1 ext4
+sd_mod                 45497  4 
+sr_mod                 22416  0 
+cdrom                  42556  1 sr_mod
+crc_t10dif             12714  1 sd_mod
+crct10dif_generic      12647  0 
+ata_generic            12910  0 
+pata_acpi              13038  0 
+ahci                   29907  3 
+libahci                32031  1 ahci
+crct10dif_pclmul       14289  1 
+ata_piix               35038  0 
+crct10dif_common       12595  3 crct10dif_pclmul,crct10dif_generic,crc_t10dif
+serio_raw              13462  0 
+crc32c_intel           22079  0 
+e1000                 149323  0 
+libata                218730  5 ahci,pata_acpi,libahci,ata_generic,ata_piix

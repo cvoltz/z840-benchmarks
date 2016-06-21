@@ -1,0 +1,15 @@
+Device: /org/freedesktop/UPower/devices/DisplayDevice
+  power supply:         no
+  updated:              Wed 08 Jun 2016 09:01:10 PM CDT (3887 seconds ago)
+  has history:          no
+  has statistics:       no
+  unknown
+    warning-level:       none
+    icon-name:          ''
+
+Daemon:
+  daemon-version:  0.99.2
+  on-battery:      no
+  lid-is-closed:   no
+  lid-is-present:  no
+  critical-action: HybridSleep

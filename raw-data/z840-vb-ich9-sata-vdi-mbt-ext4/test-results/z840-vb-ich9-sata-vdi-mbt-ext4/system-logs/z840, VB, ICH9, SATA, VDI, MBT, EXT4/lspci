@@ -1,0 +1,65 @@
+Slot:	00:02.0
+Class:	VGA compatible controller [0300]
+Vendor:	InnoTek Systemberatung GmbH [80ee]
+Device:	VirtualBox Graphics Adapter [beef]
+
+Slot:	00:03.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	82540EM Gigabit Ethernet Controller [100e]
+SVendor:	Intel Corporation [8086]
+SDevice:	PRO/1000 MT Desktop Adapter [001e]
+Rev:	02
+Driver:	e1000
+
+Slot:	00:04.0
+Class:	System peripheral [0880]
+Vendor:	InnoTek Systemberatung GmbH [80ee]
+Device:	VirtualBox Guest Service [cafe]
+Driver:	vboxguest
+
+Slot:	00:07.0
+Class:	Bridge [0680]
+Vendor:	Intel Corporation [8086]
+Device:	82371AB/EB/MB PIIX4 ACPI [7113]
+Rev:	08
+
+Slot:	00:18.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	82801 Mobile PCI Bridge [2448]
+Rev:	f2
+ProgIf:	01
+
+Slot:	00:19.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	82801 Mobile PCI Bridge [2448]
+Rev:	f2
+ProgIf:	01
+
+Slot:	00:1f.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	82801GBM (ICH7-M) LPC Interface Bridge [27b9]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [7270]
+Rev:	02
+Driver:	lpc_ich
+
+Slot:	00:1f.1
+Class:	IDE interface [0101]
+Vendor:	Intel Corporation [8086]
+Device:	82371AB/EB/MB PIIX4 IDE [7111]
+Rev:	01
+ProgIf:	8a
+Driver:	ata_piix
+
+Slot:	00:1f.2
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] [2829]
+Rev:	02
+ProgIf:	01
+Driver:	ahci
+

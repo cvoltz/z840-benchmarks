@@ -1,0 +1,1412 @@
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DMI2 [2f00]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	02
+
+Slot:	00:01.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 1 [2f02]
+Rev:	02
+Driver:	pcieport
+
+Slot:	00:01.1
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 1 [2f03]
+Rev:	02
+Driver:	pcieport
+
+Slot:	00:02.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 2 [2f04]
+Rev:	02
+Driver:	pcieport
+
+Slot:	00:03.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 3 [2f08]
+Rev:	02
+Driver:	pcieport
+
+Slot:	00:05.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Address Map, VTd_Misc, System Management [2f28]
+Rev:	02
+
+Slot:	00:05.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Hot Plug [2f29]
+Rev:	02
+
+Slot:	00:05.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 RAS, Control Status and Global Errors [2f2a]
+Rev:	02
+
+Slot:	00:05.4
+Class:	PIC [0800]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 I/O APIC [2f2c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	02
+ProgIf:	20
+
+Slot:	00:11.0
+Class:	Unassigned class [ff00]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset SPSR [8d7c]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+
+Slot:	00:11.4
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset sSATA Controller [AHCI mode] [8d62]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+ProgIf:	01
+Driver:	ahci
+
+Slot:	00:14.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset USB xHCI Host Controller [8d31]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+ProgIf:	30
+Driver:	xhci_hcd
+
+Slot:	00:16.0
+Class:	Communication controller [0780]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset MEI Controller #1 [8d3a]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+Driver:	mei_me
+
+Slot:	00:16.3
+Class:	Serial controller [0700]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset KT Controller [8d3d]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+ProgIf:	02
+Driver:	serial
+
+Slot:	00:19.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Ethernet Connection (2) I218-LM [15a0]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+Driver:	e1000e
+
+Slot:	00:1a.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset USB Enhanced Host Controller #2 [8d2d]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+ProgIf:	20
+Driver:	ehci-pci
+
+Slot:	00:1b.0
+Class:	Audio device [0403]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset HD Audio Controller [8d20]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+Driver:	snd_hda_intel
+
+Slot:	00:1c.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset PCI Express Root Port #1 [8d10]
+PhySlot:	8191
+Rev:	d5
+Driver:	pcieport
+
+Slot:	00:1c.3
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset PCI Express Root Port #4 [8d16]
+PhySlot:	8191
+Rev:	d5
+Driver:	pcieport
+
+Slot:	00:1c.4
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset PCI Express Root Port #5 [8d18]
+PhySlot:	8191
+Rev:	d5
+Driver:	pcieport
+
+Slot:	00:1d.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset USB Enhanced Host Controller #1 [8d26]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+ProgIf:	20
+Driver:	ehci-pci
+
+Slot:	00:1f.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset LPC Controller [8d44]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+Driver:	lpc_ich
+
+Slot:	00:1f.2
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset 6-Port SATA Controller [AHCI mode] [8d02]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+ProgIf:	01
+Driver:	ahci
+
+Slot:	00:1f.3
+Class:	SMBus [0c05]
+Vendor:	Intel Corporation [8086]
+Device:	C610/X99 series chipset SMBus Controller [8d22]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	05
+Driver:	i801_smbus
+
+Slot:	01:00.0
+Class:	Serial Attached SCSI controller [0107]
+Vendor:	LSI Logic / Symbios Logic [1000]
+Device:	SAS2308 PCI-Express Fusion-MPT SAS-2 [0086]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [158b]
+PhySlot:	0
+Rev:	05
+Driver:	mpt2sas
+
+Slot:	02:00.0
+Class:	SATA controller [0106]
+Vendor:	Samsung Electronics Co Ltd [144d]
+Device:	Device [a801]
+SVendor:	Samsung Electronics Co Ltd [144d]
+SDevice:	Device [a801]
+PhySlot:	1
+Rev:	01
+ProgIf:	01
+Driver:	ahci
+
+Slot:	04:00.0
+Class:	VGA compatible controller [0300]
+Vendor:	NVIDIA Corporation [10de]
+Device:	GK107GL [Quadro K420] [0ff3]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [1162]
+PhySlot:	2
+Rev:	a1
+Driver:	nouveau
+
+Slot:	04:00.1
+Class:	Audio device [0403]
+Vendor:	NVIDIA Corporation [10de]
+Device:	GK107 HDMI Audio Controller [0e1b]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [1162]
+PhySlot:	2
+Rev:	a1
+Driver:	snd_hda_intel
+
+Slot:	05:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	I210 Gigabit Network Connection [1533]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [2129]
+Rev:	03
+Driver:	igb
+
+Slot:	7f:08.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f80]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f80]
+Rev:	02
+
+Slot:	7f:08.2
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f32]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f32]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:08.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f83]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f83]
+Rev:	02
+
+Slot:	7f:09.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f90]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f90]
+Rev:	02
+
+Slot:	7f:09.2
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f33]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f33]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:09.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f93]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f93]
+Rev:	02
+
+Slot:	7f:0b.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f81]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f81]
+Rev:	02
+
+Slot:	7f:0b.1
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f36]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f36]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:0b.2
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f37]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f37]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:0c.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe0]
+Rev:	02
+
+Slot:	7f:0c.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe1]
+Rev:	02
+
+Slot:	7f:0c.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe2]
+Rev:	02
+
+Slot:	7f:0c.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe3]
+Rev:	02
+
+Slot:	7f:0c.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe4]
+Rev:	02
+
+Slot:	7f:0c.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe5]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe5]
+Rev:	02
+
+Slot:	7f:0c.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe6]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe6]
+Rev:	02
+
+Slot:	7f:0c.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe7]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe7]
+Rev:	02
+
+Slot:	7f:0d.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe8]
+Rev:	02
+
+Slot:	7f:0d.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe9]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe9]
+Rev:	02
+
+Slot:	7f:0f.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ff8]
+Rev:	02
+
+Slot:	7f:0f.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ff9]
+Rev:	02
+
+Slot:	7f:0f.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ffa]
+Rev:	02
+
+Slot:	7f:0f.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ffb]
+Rev:	02
+
+Slot:	7f:0f.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers [2ffc]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [2fe0]
+Rev:	02
+
+Slot:	7f:0f.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers [2ffd]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [2fe0]
+Rev:	02
+
+Slot:	7f:0f.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers [2ffe]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [2fe0]
+Rev:	02
+
+Slot:	7f:10.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f1d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f1d]
+Rev:	02
+
+Slot:	7f:10.1
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f34]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f34]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:10.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1e]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1e]
+Rev:	02
+
+Slot:	7f:10.6
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f7d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f7d]
+Rev:	02
+
+Slot:	7f:10.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1f]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1f]
+Rev:	02
+
+Slot:	7f:12.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2fa0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2fa0]
+Rev:	02
+
+Slot:	7f:12.1
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2f30]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2f30]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:12.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f60]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f60]
+Rev:	02
+
+Slot:	7f:12.5
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f38]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f38]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:13.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2fa8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2fa8]
+Rev:	02
+
+Slot:	7f:13.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2f71]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2f71]
+Rev:	02
+
+Slot:	7f:13.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2faa]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2faa]
+Rev:	02
+
+Slot:	7f:13.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2fab]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2fab]
+Rev:	02
+
+Slot:	7f:13.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Channel 0/1 Broadcast [2fae]
+Rev:	02
+
+Slot:	7f:13.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Global Broadcast [2faf]
+Rev:	02
+
+Slot:	7f:14.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control [2fb0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control [2fb0]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:14.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control [2fb1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control [2fb1]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:14.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers [2fb2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers [2fb2]
+Rev:	02
+
+Slot:	7f:14.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers [2fb3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers [2fb3]
+Rev:	02
+
+Slot:	7f:14.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbc]
+Rev:	02
+
+Slot:	7f:14.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbd]
+Rev:	02
+
+Slot:	7f:14.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbe]
+Rev:	02
+
+Slot:	7f:14.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbf]
+Rev:	02
+
+Slot:	7f:16.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f68]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f68]
+Rev:	02
+
+Slot:	7f:16.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f79]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f79]
+Rev:	02
+
+Slot:	7f:16.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6a]
+Rev:	02
+
+Slot:	7f:16.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6b]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6b]
+Rev:	02
+
+Slot:	7f:16.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Channel 2/3 Broadcast [2f6e]
+Rev:	02
+
+Slot:	7f:16.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Global Broadcast [2f6f]
+Rev:	02
+
+Slot:	7f:17.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control [2fd0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control [2fd0]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:17.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 Thermal Control [2fd1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 Thermal Control [2fd1]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:17.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 ERROR Registers [2fd2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 ERROR Registers [2fd2]
+Rev:	02
+
+Slot:	7f:17.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 ERROR Registers [2fd3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 ERROR Registers [2fd3]
+Rev:	02
+
+Slot:	7f:17.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fb8]
+Rev:	02
+
+Slot:	7f:17.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fb9]
+Rev:	02
+
+Slot:	7f:17.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fba]
+Rev:	02
+
+Slot:	7f:17.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fbb]
+Rev:	02
+
+Slot:	7f:1e.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f98]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f98]
+Rev:	02
+
+Slot:	7f:1e.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f99]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f99]
+Rev:	02
+
+Slot:	7f:1e.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9a]
+Rev:	02
+
+Slot:	7f:1e.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2fc0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2fc0]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	7f:1e.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9c]
+Rev:	02
+
+Slot:	7f:1f.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 VCU [2f88]
+Rev:	02
+
+Slot:	7f:1f.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 VCU [2f8a]
+Rev:	02
+
+Slot:	80:00.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 0 [2f01]
+Rev:	02
+Driver:	pcieport
+
+Slot:	80:01.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 1 [2f02]
+Rev:	02
+Driver:	pcieport
+
+Slot:	80:01.1
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 1 [2f03]
+Rev:	02
+Driver:	pcieport
+
+Slot:	80:02.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 2 [2f04]
+Rev:	02
+Driver:	pcieport
+
+Slot:	80:03.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 3 [2f08]
+Rev:	02
+Driver:	pcieport
+
+Slot:	80:03.2
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCI Express Root Port 3 [2f0a]
+Rev:	02
+Driver:	pcieport
+
+Slot:	80:05.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Address Map, VTd_Misc, System Management [2f28]
+Rev:	02
+
+Slot:	80:05.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Hot Plug [2f29]
+Rev:	02
+
+Slot:	80:05.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 RAS, Control Status and Global Errors [2f2a]
+Rev:	02
+
+Slot:	80:05.4
+Class:	PIC [0800]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 I/O APIC [2f2c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [0000]
+Rev:	02
+ProgIf:	20
+
+Slot:	84:00.0
+Class:	VGA compatible controller [0300]
+Vendor:	NVIDIA Corporation [10de]
+Device:	GK107GL [Quadro K420] [0ff3]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [1162]
+PhySlot:	4
+Rev:	a1
+Driver:	nouveau
+
+Slot:	84:00.1
+Class:	Audio device [0403]
+Vendor:	NVIDIA Corporation [10de]
+Device:	GK107 HDMI Audio Controller [0e1b]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [1162]
+PhySlot:	4
+Rev:	a1
+Driver:	snd_hda_intel
+
+Slot:	ff:08.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f80]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f80]
+Rev:	02
+
+Slot:	ff:08.2
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f32]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f32]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:08.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f83]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 0 [2f83]
+Rev:	02
+
+Slot:	ff:09.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f90]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f90]
+Rev:	02
+
+Slot:	ff:09.2
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f33]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f33]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:09.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f93]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 QPI Link 1 [2f93]
+Rev:	02
+
+Slot:	ff:0b.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f81]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f81]
+Rev:	02
+
+Slot:	ff:0b.1
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f36]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f36]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:0b.2
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f37]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 R3 QPI Link 0 & 1 Monitoring [2f37]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:0c.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe0]
+Rev:	02
+
+Slot:	ff:0c.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe1]
+Rev:	02
+
+Slot:	ff:0c.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe2]
+Rev:	02
+
+Slot:	ff:0c.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe3]
+Rev:	02
+
+Slot:	ff:0c.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe4]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe4]
+Rev:	02
+
+Slot:	ff:0c.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe5]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe5]
+Rev:	02
+
+Slot:	ff:0c.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe6]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe6]
+Rev:	02
+
+Slot:	ff:0c.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe7]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe7]
+Rev:	02
+
+Slot:	ff:0d.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe8]
+Rev:	02
+
+Slot:	ff:0d.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe9]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Unicast Registers [2fe9]
+Rev:	02
+
+Slot:	ff:0f.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ff8]
+Rev:	02
+
+Slot:	ff:0f.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ff9]
+Rev:	02
+
+Slot:	ff:0f.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ffa]
+Rev:	02
+
+Slot:	ff:0f.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Buffered Ring Agent [2ffb]
+Rev:	02
+
+Slot:	ff:0f.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers [2ffc]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [2fe0]
+Rev:	02
+
+Slot:	ff:0f.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers [2ffd]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [2fe0]
+Rev:	02
+
+Slot:	ff:0f.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers [2ffe]
+SVendor:	Intel Corporation [8086]
+SDevice:	Device [2fe0]
+Rev:	02
+
+Slot:	ff:10.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f1d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f1d]
+Rev:	02
+
+Slot:	ff:10.1
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f34]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 PCIe Ring Interface [2f34]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:10.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1e]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1e]
+Rev:	02
+
+Slot:	ff:10.6
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f7d]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f7d]
+Rev:	02
+
+Slot:	ff:10.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1f]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Scratchpad & Semaphore Registers [2f1f]
+Rev:	02
+
+Slot:	ff:12.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2fa0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2fa0]
+Rev:	02
+Driver:	sbridge_edac
+
+Slot:	ff:12.1
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2f30]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 0 [2f30]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:12.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f60]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f60]
+Rev:	02
+
+Slot:	ff:12.5
+Class:	Performance counters [1101]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f38]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Home Agent 1 [2f38]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:13.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2fa8]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2fa8]
+Rev:	02
+
+Slot:	ff:13.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2f71]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Target Address, Thermal & RAS Registers [2f71]
+Rev:	02
+
+Slot:	ff:13.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2faa]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2faa]
+Rev:	02
+
+Slot:	ff:13.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2fab]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder [2fab]
+Rev:	02
+
+Slot:	ff:13.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Channel 0/1 Broadcast [2fae]
+Rev:	02
+
+Slot:	ff:13.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Global Broadcast [2faf]
+Rev:	02
+
+Slot:	ff:14.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control [2fb0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 Thermal Control [2fb0]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:14.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control [2fb1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 Thermal Control [2fb1]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:14.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers [2fb2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 0 ERROR Registers [2fb2]
+Rev:	02
+
+Slot:	ff:14.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers [2fb3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 0 Channel 1 ERROR Registers [2fb3]
+Rev:	02
+
+Slot:	ff:14.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbc]
+Rev:	02
+
+Slot:	ff:14.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbd]
+Rev:	02
+
+Slot:	ff:14.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbe]
+Rev:	02
+
+Slot:	ff:14.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 0 & 1 [2fbf]
+Rev:	02
+
+Slot:	ff:16.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f68]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f68]
+Rev:	02
+
+Slot:	ff:16.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f79]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Target Address, Thermal & RAS Registers [2f79]
+Rev:	02
+
+Slot:	ff:16.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6a]
+Rev:	02
+
+Slot:	ff:16.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6b]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder [2f6b]
+Rev:	02
+
+Slot:	ff:16.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Channel 2/3 Broadcast [2f6e]
+Rev:	02
+
+Slot:	ff:16.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO Global Broadcast [2f6f]
+Rev:	02
+
+Slot:	ff:17.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control [2fd0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 Thermal Control [2fd0]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:17.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 Thermal Control [2fd1]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 Thermal Control [2fd1]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:17.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 ERROR Registers [2fd2]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 0 ERROR Registers [2fd2]
+Rev:	02
+
+Slot:	ff:17.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 ERROR Registers [2fd3]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Integrated Memory Controller 1 Channel 1 ERROR Registers [2fd3]
+Rev:	02
+
+Slot:	ff:17.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fb8]
+Rev:	02
+
+Slot:	ff:17.5
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fb9]
+Rev:	02
+
+Slot:	ff:17.6
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fba]
+Rev:	02
+
+Slot:	ff:17.7
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 DDRIO (VMSE) 2 & 3 [2fbb]
+Rev:	02
+
+Slot:	ff:1e.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f98]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f98]
+Rev:	02
+
+Slot:	ff:1e.1
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f99]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f99]
+Rev:	02
+
+Slot:	ff:1e.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9a]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9a]
+Rev:	02
+
+Slot:	ff:1e.3
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2fc0]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2fc0]
+Rev:	02
+Driver:	hswep_uncore
+
+Slot:	ff:1e.4
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9c]
+SVendor:	Intel Corporation [8086]
+SDevice:	Xeon E7 v3/Xeon E5 v3/Core i7 Power Control Unit [2f9c]
+Rev:	02
+
+Slot:	ff:1f.0
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 VCU [2f88]
+Rev:	02
+
+Slot:	ff:1f.2
+Class:	System peripheral [0880]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E7 v3/Xeon E5 v3/Core i7 VCU [2f8a]
+Rev:	02
+

@@ -1,0 +1,7 @@
+Personalities : [raid10] 
+md127 : active raid10 sdc3[0] sde1[1] sdd1[2] sdf1[3]
+      1170423808 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+      [==============>......]  resync = 71.3% (835673856/1170423808) finish=27.6min speed=201811K/sec
+      bitmap: 8/9 pages [32KB], 65536KB chunk
+
+unused devices: <none>

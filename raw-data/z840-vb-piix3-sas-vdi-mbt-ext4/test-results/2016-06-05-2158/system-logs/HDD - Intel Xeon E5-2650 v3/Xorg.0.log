@@ -1,0 +1,2676 @@
+
+X.Org X Server 1.17.2
+Release Date: 2015-06-16
+X Protocol Version 11, Revision 0
+Build Operating System:  2.6.32-220.17.1.el6.x86_64 
+Current Operating System: Linux cvoltz.americas.hpqcorp.net 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64
+Kernel command line: BOOT_IMAGE=/vmlinuz-3.10.0-327.el7.x86_64 root=UUID=13691b65-a042-418c-b1c0-b9e2cc3fde4a ro crashkernel=auto rhgb quiet LANG=en_US.UTF-8
+Build Date: 20 November 2015  02:44:25PM
+Build ID: xorg-x11-server 1.17.2-10.el7 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Jun  5 21:50:28 2016
+(==) Using config directory: "/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+(==) ModulePath set to "/usr/lib64/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0x7f292cda5020
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 19.0
+	X.Org XInput driver : 21.0
+	X.Org Server Extension : 9.0
+(--) PCI:*(0:0:2:0) 80ee:beef:0000:0000 rev 0, Mem @ 0xe0000000/33554432, BIOS @ 0x????????/131072
+(II) LoadModule: "glx"
+(II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 9.0
+(==) AIGLX enabled
+(==) Matched vboxvideo as autoconfigured driver 0
+(==) Matched modesetting as autoconfigured driver 1
+(==) Matched fbdev as autoconfigured driver 2
+(==) Matched vesa as autoconfigured driver 3
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "vboxvideo"
+(II) Loading /usr/lib64/xorg/modules/drivers/vboxvideo_drv.so
+(II) Module vboxvideo: vendor="Oracle Corporation"
+	compiled for 1.17.0, module version = 1.0.1
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(**) Load address of symbol "VBOXVIDEO" is 0x7f292c8b02e0
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.17.2
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 0.4.3
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) LoadModule: "vesa"
+(II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+(II) Module vesa: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 2.3.2
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) VBoxVideo: guest driver for VirtualBox: vbox
+(II) modesetting: Driver for Modesetting Kernel Drivers: kms
+(II) FBDEV: driver for framebuffer: fbdev
+(II) VESA: driver for VESA chipsets: vesa
+(++) using VT number 1
+
+(WW) Falling back to old probe method for modesetting
+(EE) open /dev/dri/card0: No such file or directory
+(WW) Falling back to old probe method for fbdev
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 19.0
+(EE) open /dev/fb0: No such file or directory
+(WW) Falling back to old probe method for vesa
+(II) VBoxVideo(0): VirtualBox guest additions video driver version 5.0.20r106931
+(II) Loading sub module "ramdac"
+(II) LoadModule: "ramdac"
+(II) Module "ramdac" already built-in
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/lib64/xorg/modules/libfb.so
+(II) Module fb: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) Loading sub module "shadowfb"
+(II) LoadModule: "shadowfb"
+(II) Loading /usr/lib64/xorg/modules/libshadowfb.so
+(II) Module shadowfb: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) Loading sub module "vgahw"
+(II) LoadModule: "vgahw"
+(II) Loading /usr/lib64/xorg/modules/libvgahw.so
+(II) Module vgahw: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 0.1.0
+	ABI class: X.Org Video Driver, version 19.0
+(II) VBoxVideo(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) VBoxVideo(0): Depth 24, (--) framebuffer bpp 32
+(--) VBoxVideo(0): Virtual size is 32766x32766 (pitch 32766)
+(**) VBoxVideo(0):  Built-in mode "800x600": 29.3 MHz (scaled from 0.0 MHz), 36.4 kHz, 60.0 Hz
+(II) VBoxVideo(0): Modeline "800x600"x0.0   29.31  800 802 804 806  600 602 604 606 (36.4 kHz b)
+(**) VBoxVideo(0):  Built-in mode "800x600": 29.3 MHz (scaled from 0.0 MHz), 36.4 kHz, 60.0 Hz
+(II) VBoxVideo(0): Modeline "800x600"x0.0   29.31  800 802 804 806  600 602 604 606 (36.4 kHz b)
+(II) VBoxVideo(0): vgaHWGetIOBase: hwp->IOBase is 0x03d0
+(==) VBoxVideo(0): RGB weight 888
+(==) VBoxVideo(0): Default visual is TrueColor
+(==) VBoxVideo(0): Using gamma correction (1.0, 1.0, 1.0)
+(==) VBoxVideo(0): DPI set to (96, 96)
+(II) UnloadModule: "modesetting"
+(II) Unloading modesetting
+(II) UnloadModule: "fbdev"
+(II) Unloading fbdev
+(II) UnloadSubModule: "fbdevhw"
+(II) Unloading fbdevhw
+(II) UnloadModule: "vesa"
+(II) Unloading vesa
+(--) Depth 24 pixmap format is 32 bpp
+(II) VBoxVideo(0): Requested monitor count: 1
+(II) VBoxVideo(0): Output VGA-0 has no monitor section
+(II) VBoxVideo(0): Output VGA-0 has no monitor section
+(II) VBoxVideo(0): EDID for output VGA-0
+(II) VBoxVideo(0): Manufacturer: VBX  Model: 0  Serial#: 39322400
+(II) VBoxVideo(0): Year: 1990  Week: 1
+(II) VBoxVideo(0): EDID Version: 1.3
+(II) VBoxVideo(0): Digital Display Input
+(II) VBoxVideo(0): Indeterminate output size
+(II) VBoxVideo(0): Gamma: 2.20
+(II) VBoxVideo(0): DPMS capabilities: StandBy Suspend Off
+(II) VBoxVideo(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+(II) VBoxVideo(0): Default color space is primary color space
+(II) VBoxVideo(0): First detailed timing is preferred mode
+(II) VBoxVideo(0): redX: 0.640 redY: 0.330   greenX: 0.300 greenY: 0.600
+(II) VBoxVideo(0): blueX: 0.150 blueY: 0.060   whiteX: 0.312 whiteY: 0.329
+(II) VBoxVideo(0): Manufacturer's mask: 0
+(II) VBoxVideo(0): Supported detailed timing:
+(II) VBoxVideo(0): clock: 29.3 MHz   Image Size:  0 x 0 mm
+(II) VBoxVideo(0): h_active: 800  h_sync: 802  h_sync_end 804 h_blank_end 806 h_border: 0
+(II) VBoxVideo(0): v_active: 600  v_sync: 602  v_sync_end 604 v_blanking: 606 v_border: 0
+(II) VBoxVideo(0): Ranges: V min: 0 V max: 200 Hz, H min: 0 H max: 200 kHz, PixClock max 1005 MHz
+(II) VBoxVideo(0): Monitor name: VBOX monitor
+(II) VBoxVideo(0): EDID (in hex):
+(II) VBoxVideo(0): 	00ffffffffffff005858000020035802
+(II) VBoxVideo(0): 	0100010380000078eeee91a3544c9926
+(II) VBoxVideo(0): 	0f505400000001010101010101010101
+(II) VBoxVideo(0): 	010101010101720b2006305806200202
+(II) VBoxVideo(0): 	2200000000000000000000fd0000c800
+(II) VBoxVideo(0): 	c864000a202020202020000000fc0056
+(II) VBoxVideo(0): 	424f58206d6f6e69746f720a00000010
+(II) VBoxVideo(0): 	000a2020202020202020202020200071
+(II) VBoxVideo(0): Printing probed modes for output VGA-0
+(II) VBoxVideo(0): Modeline "800x600"x60.0   29.31  800 802 804 806  600 602 604 606 (36.4 kHz Pb)
+(II) VBoxVideo(0): Modeline "2560x1600"x60.0  247.26  2560 2562 2564 2566  1600 1602 1604 1606 (96.4 kHz b)
+(II) VBoxVideo(0): Modeline "2560x1440"x60.0  222.63  2560 2562 2564 2566  1440 1442 1444 1446 (86.8 kHz b)
+(II) VBoxVideo(0): Modeline "2048x1536"x60.0  190.04  2048 2050 2052 2054  1536 1538 1540 1542 (92.5 kHz b)
+(II) VBoxVideo(0): Modeline "1920x1600"x60.0  185.59  1920 1922 1924 1926  1600 1602 1604 1606 (96.4 kHz b)
+(II) VBoxVideo(0): Modeline "1920x1080"x60.0  125.50  1920 1922 1924 1926  1080 1082 1084 1086 (65.2 kHz b)
+(II) VBoxVideo(0): Modeline "1600x1200"x60.0  116.21  1600 1602 1604 1606  1200 1202 1204 1206 (72.4 kHz b)
+(II) VBoxVideo(0): Modeline "1680x1050"x60.0  106.82  1680 1682 1684 1686  1050 1052 1054 1056 (63.4 kHz b)
+(II) VBoxVideo(0): Modeline "1400x1050"x60.0   89.08  1400 1402 1404 1406  1050 1052 1054 1056 (63.4 kHz b)
+(II) VBoxVideo(0): Modeline "1280x1024"x60.0   79.47  1280 1282 1284 1286  1024 1026 1028 1030 (61.8 kHz b)
+(II) VBoxVideo(0): Modeline "1024x768"x60.0   47.83  1024 1026 1028 1030  768 770 772 774 (46.4 kHz b)
+(II) VBoxVideo(0): Modeline "800x600"x60.0   29.31  800 802 804 806  600 602 604 606 (36.4 kHz b)
+(II) VBoxVideo(0): Modeline "640x480"x60.0   18.84  640 642 644 646  480 482 484 486 (29.2 kHz b)
+(II) VBoxVideo(0): Output VGA-0 connected
+(II) VBoxVideo(0): Using exact sizes for initial modes
+(II) VBoxVideo(0): Output VGA-0 using initial mode 800x600 +0+0
+(II) VBoxVideo(0): Using default gamma of (1.0, 1.0, 1.0) unless otherwise stated.
+(II) VBoxVideo(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+(==) VBoxVideo(0): DPMS enabled
+(--) RandR disabled
+(II) SELinux: Disabled by boolean
+(II) AIGLX: Screen 0 is not DRI2 capable
+(EE) AIGLX: reverting to software rendering
+(II) AIGLX: Loaded and initialized swrast
+(II) GLX: Initialized DRISWRAST GL provider for screen 0
+(II) VBoxVideo(0): Setting screen physical size to 211 x 158
+(II) config/udev: Adding input device Power Button (/dev/input/event0)
+(**) Power Button: Applying InputClass "evdev keyboard catchall"
+(**) Power Button: Applying InputClass "system-keyboard"
+(II) LoadModule: "evdev"
+(II) Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+(II) Module evdev: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 2.9.2
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 21.0
+(II) Using input driver 'evdev' for 'Power Button'
+(**) Power Button: always reports core events
+(**) evdev: Power Button: Device: "/dev/input/event0"
+(--) evdev: Power Button: Vendor 0 Product 0x1
+(--) evdev: Power Button: Found keys
+(II) evdev: Power Button: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+(**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+(**) Sleep Button: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'Sleep Button'
+(**) Sleep Button: always reports core events
+(**) evdev: Sleep Button: Device: "/dev/input/event1"
+(--) evdev: Sleep Button: Vendor 0 Product 0x3
+(--) evdev: Sleep Button: Found keys
+(II) evdev: Sleep Button: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSLPBN:00/input/input1/event1"
+(II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device Video Bus (/dev/input/event4)
+(**) Video Bus: Applying InputClass "evdev keyboard catchall"
+(**) Video Bus: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'Video Bus'
+(**) Video Bus: always reports core events
+(**) evdev: Video Bus: Device: "/dev/input/event4"
+(--) evdev: Video Bus: Vendor 0 Product 0x6
+(--) evdev: Video Bus: Found keys
+(II) evdev: Video Bus: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/device:00/PNP0A03:00/LNXVIDEO:00/input/input4/event4"
+(II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device VirtualBox mouse integration (/dev/input/event6)
+(**) VirtualBox mouse integration: Applying InputClass "evdev pointer catchall"
+(II) Using input driver 'evdev' for 'VirtualBox mouse integration'
+(**) VirtualBox mouse integration: always reports core events
+(**) evdev: VirtualBox mouse integration: Device: "/dev/input/event6"
+(--) evdev: VirtualBox mouse integration: Vendor 0x80ee Product 0xcafe
+(--) evdev: VirtualBox mouse integration: Found 1 mouse buttons
+(--) evdev: VirtualBox mouse integration: Found absolute axes
+(--) evdev: VirtualBox mouse integration: Found x and y absolute axes
+(--) evdev: VirtualBox mouse integration: Found absolute touchscreen
+(II) evdev: VirtualBox mouse integration: Configuring as touchscreen
+(**) evdev: VirtualBox mouse integration: YAxisMapping: buttons 4 and 5
+(**) evdev: VirtualBox mouse integration: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/input/input6/event6"
+(II) XINPUT: Adding extended input device "VirtualBox mouse integration" (type: TOUCHSCREEN, id 9)
+(II) evdev: VirtualBox mouse integration: initialized for absolute axes.
+(**) VirtualBox mouse integration: (accel) keeping acceleration scheme 1
+(**) VirtualBox mouse integration: (accel) acceleration profile 0
+(**) VirtualBox mouse integration: (accel) acceleration factor: 2.000
+(**) VirtualBox mouse integration: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+(**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+(**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+(**) AT Translated Set 2 keyboard: always reports core events
+(**) evdev: AT Translated Set 2 keyboard: Device: "/dev/input/event2"
+(--) evdev: AT Translated Set 2 keyboard: Vendor 0x1 Product 0x1
+(--) evdev: AT Translated Set 2 keyboard: Found keys
+(II) evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+(II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 10)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/event3)
+(**) ImExPS/2 Generic Explorer Mouse: Applying InputClass "evdev pointer catchall"
+(II) Using input driver 'evdev' for 'ImExPS/2 Generic Explorer Mouse'
+(**) ImExPS/2 Generic Explorer Mouse: always reports core events
+(**) evdev: ImExPS/2 Generic Explorer Mouse: Device: "/dev/input/event3"
+(--) evdev: ImExPS/2 Generic Explorer Mouse: Vendor 0x2 Product 0x6
+(--) evdev: ImExPS/2 Generic Explorer Mouse: Found 9 mouse buttons
+(--) evdev: ImExPS/2 Generic Explorer Mouse: Found scroll wheel(s)
+(--) evdev: ImExPS/2 Generic Explorer Mouse: Found relative axes
+(--) evdev: ImExPS/2 Generic Explorer Mouse: Found x and y relative axes
+(II) evdev: ImExPS/2 Generic Explorer Mouse: Configuring as mouse
+(II) evdev: ImExPS/2 Generic Explorer Mouse: Adding scrollwheel support
+(**) evdev: ImExPS/2 Generic Explorer Mouse: YAxisMapping: buttons 4 and 5
+(**) evdev: ImExPS/2 Generic Explorer Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input3/event3"
+(II) XINPUT: Adding extended input device "ImExPS/2 Generic Explorer Mouse" (type: MOUSE, id 11)
+(II) evdev: ImExPS/2 Generic Explorer Mouse: initialized for relative axes.
+(**) ImExPS/2 Generic Explorer Mouse: (accel) keeping acceleration scheme 1
+(**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration profile 0
+(**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration factor: 2.000
+(**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/mouse0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device PC Speaker (/dev/input/event5)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 1 connected from local host ( uid=0 gid=0 pid=2347 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 1 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 1 connected from local host ( uid=0 gid=0 pid=2365 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 1 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 1 connected from local host ( uid=0 gid=0 pid=1488 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 2 connected from local host ( uid=42 gid=42 pid=2554 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 connected from local host ( uid=42 gid=42 pid=2624 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 connected from local host ( uid=42 gid=42 pid=2636 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 connected from local host ( uid=42 gid=42 pid=2636 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 connected from local host ( uid=42 gid=42 pid=2624 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 4 connected from local host ( uid=42 gid=42 pid=2672 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 4 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 4 connected from local host ( uid=42 gid=42 pid=2672 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 5 connected from local host ( uid=42 gid=42 pid=2672 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 6 connected from local host ( uid=42 gid=42 pid=2686 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 6 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 connected from local host ( uid=42 gid=42 pid=2756 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 disconnected
+AUDIT: Sun Jun  5 21:50:29 2016: 1563: client 3 connected from local host ( uid=42 gid=42 pid=2756 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 connected from local host ( uid=42 gid=42 pid=2756 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 connected from local host ( uid=42 gid=42 pid=2756 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 connected from local host ( uid=42 gid=42 pid=2822 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 6 connected from local host ( uid=42 gid=42 pid=2816 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 7 connected from local host ( uid=42 gid=42 pid=2816 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 8 connected from local host ( uid=42 gid=42 pid=2816 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 8 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 8 connected from local host ( uid=42 gid=42 pid=2816 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 8 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 8 connected from local host ( uid=42 gid=42 pid=2861 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 9 connected from local host ( uid=42 gid=42 pid=2861 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 9 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 9 connected from local host ( uid=42 gid=42 pid=2816 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 9 disconnected
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 9 connected from local host ( uid=42 gid=42 pid=2874 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 10 connected from local host ( uid=42 gid=42 pid=2874 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:30 2016: 1563: client 10 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:32 2016: 1563: client 10 connected from local host ( uid=42 gid=42 pid=2756 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:32 2016: 1563: client 10 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: last message repeated 1 times
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 10 connected from local host ( uid=42 gid=42 pid=2636 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 4 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 5 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 10 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 9 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 8 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 6 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 3 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 2 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 2 connected from local host ( uid=1000 gid=1000 pid=3091 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 2 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 2 connected from local host ( uid=1000 gid=1000 pid=3092 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 2 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 2 connected from local host ( uid=1000 gid=1000 pid=3097 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 3 connected from local host ( uid=1000 gid=1000 pid=3244 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 4 connected from local host ( uid=1000 gid=1000 pid=3254 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 5 connected from local host ( uid=1000 gid=1000 pid=3261 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 6 connected from local host ( uid=1000 gid=1000 pid=3266 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3260 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3271 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 8 connected from local host ( uid=1000 gid=1000 pid=3272 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 8 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3274 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3275 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3276 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:54 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3305 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3307 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3307 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3305 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 8 connected from local host ( uid=1000 gid=1000 pid=3315 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 8 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 8 connected from local host ( uid=1000 gid=1000 pid=3315 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 9 connected from local host ( uid=1000 gid=1000 pid=3315 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3333 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 7 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 connected from local host ( uid=1000 gid=1000 pid=3337 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 connected from local host ( uid=1000 gid=1000 pid=3352 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 10 connected from local host ( uid=1000 gid=1000 pid=3341 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 11 connected from local host ( uid=1000 gid=1000 pid=3356 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 11 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 11 connected from local host ( uid=1000 gid=1000 pid=3360 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 11 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 11 connected from local host ( uid=1000 gid=1000 pid=3365 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 12 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 12 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 12 connected from local host ( uid=1000 gid=1000 pid=3365 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 13 connected from local host ( uid=1000 gid=1000 pid=3365 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 13 disconnected
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 13 connected from local host ( uid=1000 gid=1000 pid=3365 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:55 2016: 1563: client 13 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 13 connected from local host ( uid=1000 gid=1000 pid=3438 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3443 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3447 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3449 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3450 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3455 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3457 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3458 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3459 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3460 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3461 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3462 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3463 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 15 connected from local host ( uid=1000 gid=1000 pid=3365 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 15 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3464 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3465 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3466 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3467 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3468 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3469 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3470 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3472 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3474 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3477 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 15 connected from local host ( uid=1000 gid=1000 pid=3480 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 16 connected from local host ( uid=1000 gid=1000 pid=3480 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 16 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3484 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3493 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3496 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3502 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3506 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3517 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3521 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3524 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3526 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3531 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3535 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3537 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3540 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3544 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3548 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3552 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3555 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3557 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3559 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3562 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3564 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3565 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3568 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3571 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3573 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3574 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3577 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3579 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3582 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3584 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3586 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3588 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3590 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3593 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3595 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3597 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3599 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3601 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3603 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3605 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3607 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3610 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3612 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3614 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3619 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3620 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3616 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 16 connected from local host ( uid=1000 gid=1000 pid=3621 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 16 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3622 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3626 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3627 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3628 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3629 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 16 connected from local host ( uid=1000 gid=1000 pid=3616 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3630 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3631 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3632 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3633 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3634 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3635 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3636 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3637 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3638 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3641 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3645 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3659 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3681 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3693 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3697 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 17 connected from local host ( uid=1000 gid=1000 pid=3694 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3709 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3703 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 20 connected from local host ( uid=1000 gid=1000 pid=3711 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 19 connected from local host ( uid=1000 gid=1000 pid=3692 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 21 connected from local host ( uid=1000 gid=1000 pid=3657 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:56 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 20 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 19 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3703 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 14 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 19 connected from local host ( uid=1000 gid=1000 pid=3711 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 14 connected from local host ( uid=1000 gid=1000 pid=3692 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 20 connected from local host ( uid=1000 gid=1000 pid=3712 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 20 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 21 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 20 connected from local host ( uid=1000 gid=1000 pid=3712 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x1028 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x1028"x0.0   59.55  954 956 958 960  1028 1030 1032 1034 -hsync -vsync (62.0 kHz eP)
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 21 connected from local host ( uid=1000 gid=1000 pid=3703 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 21 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:50:57 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3908 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3908 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 21 connected from local host ( uid=1000 gid=1000 pid=3912 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 21 disconnected
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 21 connected from local host ( uid=1000 gid=1000 pid=3912 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:01 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x852 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x852"x0.0   49.42  954 956 958 960  852 854 856 858 -hsync -vsync (51.5 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 954x852 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "954x852"x0.0   49.42  954 956 958 960  852 854 856 858 -hsync -vsync (51.5 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 956x869 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "956x869"x0.0   50.50  956 958 960 962  869 871 873 875 -hsync -vsync (52.5 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 956x797 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "956x797"x0.0   46.34  956 958 960 962  797 799 801 803 -hsync -vsync (48.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 956x869 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "956x869"x0.0   50.50  956 958 960 962  869 871 873 875 -hsync -vsync (52.5 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x822 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x822"x0.0   47.89  958 960 962 964  822 824 826 828 -hsync -vsync (49.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x822 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x822"x0.0   47.89  958 960 962 964  822 824 826 828 -hsync -vsync (49.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x822 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x822"x0.0   47.89  958 960 962 964  822 824 826 828 -hsync -vsync (49.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x639 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x639"x0.0   37.38  960 962 964 966  639 641 643 645 -hsync -vsync (38.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x638 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x638"x0.0   37.32  960 962 964 966  638 640 642 644 -hsync -vsync (38.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 962x612 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "962x612"x0.0   35.89  962 964 966 968  612 614 616 618 -hsync -vsync (37.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 962x612 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "962x612"x0.0   35.89  962 964 966 968  612 614 616 618 -hsync -vsync (37.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x600 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x600"x0.0   35.26  964 966 968 970  600 602 604 606 -hsync -vsync (36.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x560 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x560"x0.0   32.94  964 966 968 970  560 562 564 566 -hsync -vsync (34.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x560 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x560"x0.0   32.94  964 966 968 970  560 562 564 566 -hsync -vsync (34.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 966x530 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "966x530"x0.0   31.25  966 968 970 972  530 532 534 536 -hsync -vsync (32.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 966x530 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "966x530"x0.0   31.25  966 968 970 972  530 532 534 536 -hsync -vsync (32.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 968x570 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "968x570"x0.0   33.66  968 970 972 974  570 572 574 576 -hsync -vsync (34.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 970x564 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "970x564"x0.0   33.37  970 972 974 976  564 566 568 570 -hsync -vsync (34.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 972x556 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "972x556"x0.0   32.97  972 974 976 978  556 558 560 562 -hsync -vsync (33.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 972x556 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "972x556"x0.0   32.97  972 974 976 978  556 558 560 562 -hsync -vsync (33.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 974x509 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "974x509"x0.0   30.28  974 976 978 980  509 511 513 515 -hsync -vsync (30.9 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 976x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "976x506"x0.0   30.16  976 978 980 982  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 978x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "978x546"x0.0   32.59  978 980 982 984  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 978x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "978x546"x0.0   32.59  978 980 982 984  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 980x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "980x546"x0.0   32.65  980 982 984 986  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 982x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "982x546"x0.0   32.72  982 984 986 988  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 984x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "984x506"x0.0   30.41  984 986 988 990  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 986x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "986x546"x0.0   32.85  986 988 990 992  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 986x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "986x546"x0.0   32.85  986 988 990 992  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:17 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:18 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 986x522 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "986x522"x0.0   31.42  986 988 990 992  522 524 526 528 -hsync -vsync (31.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 988x560 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "988x560"x0.0   33.75  988 990 992 994  560 562 564 566 -hsync -vsync (34.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 988x560 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "988x560"x0.0   33.75  988 990 992 994  560 562 564 566 -hsync -vsync (34.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 990x558 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "990x558"x0.0   33.70  990 992 994 996  558 560 562 564 -hsync -vsync (33.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 990x516 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "990x516"x0.0   31.19  990 992 994 996  516 518 520 522 -hsync -vsync (31.3 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 990x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "990x514"x0.0   31.07  990 992 994 996  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 992x554 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "992x554"x0.0   33.53  992 994 996 998  554 556 558 560 -hsync -vsync (33.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 992x554 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "992x554"x0.0   33.53  992 994 996 998  554 556 558 560 -hsync -vsync (33.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 994x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "994x514"x0.0   31.20  994 996 998 1000  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 996x554 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "996x554"x0.0   33.66  996 998 1000 1002  554 556 558 560 -hsync -vsync (33.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 996x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "996x514"x0.0   31.26  996 998 1000 1002  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 998x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "998x514"x0.0   31.32  998 1000 1002 1004  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 998x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "998x514"x0.0   31.32  998 1000 1002 1004  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1000x538 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1000x538"x0.0   32.83  1000 1002 1004 1006  538 540 542 544 -hsync -vsync (32.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1002x537 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1002x537"x0.0   32.84  1002 1004 1006 1008  537 539 541 543 -hsync -vsync (32.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1004x537 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1004x537"x0.0   32.90  1004 1006 1008 1010  537 539 541 543 -hsync -vsync (32.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1004x497 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1004x497"x0.0   30.48  1004 1006 1008 1010  497 499 501 503 -hsync -vsync (30.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1006x497 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1006x497"x0.0   30.54  1006 1008 1010 1012  497 499 501 503 -hsync -vsync (30.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1008x497 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1008x497"x0.0   30.60  1008 1010 1012 1014  497 499 501 503 -hsync -vsync (30.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1008x497 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1008x497"x0.0   30.60  1008 1010 1012 1014  497 499 501 503 -hsync -vsync (30.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1008x497 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1008x497"x0.0   30.60  1008 1010 1012 1014  497 499 501 503 -hsync -vsync (30.2 kHz eP)
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:23 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:24 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1008x500 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1008x500"x0.0   30.78  1008 1010 1012 1014  500 502 504 506 -hsync -vsync (30.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1010x540 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1010x540"x0.0   33.28  1010 1012 1014 1016  540 542 544 546 -hsync -vsync (32.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1010x540 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1010x540"x0.0   33.28  1010 1012 1014 1016  540 542 544 546 -hsync -vsync (32.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1012x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1012x506"x0.0   31.27  1012 1014 1016 1018  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1014x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1014x506"x0.0   31.33  1014 1016 1018 1020  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1014x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1014x506"x0.0   31.33  1014 1016 1018 1020  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1014x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1014x506"x0.0   31.33  1014 1016 1018 1020  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:25 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1014x512 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1014x512"x0.0   31.70  1014 1016 1018 1020  512 514 516 518 -hsync -vsync (31.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1016x552 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1016x552"x0.0   34.21  1016 1018 1020 1022  552 554 556 558 -hsync -vsync (33.5 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1016x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1016x514"x0.0   31.88  1016 1018 1020 1022  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1016x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1016x514"x0.0   31.88  1016 1018 1020 1022  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1018x554 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1018x554"x0.0   34.40  1018 1020 1022 1024  554 556 558 560 -hsync -vsync (33.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 1018x554 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "1018x554"x0.0   34.40  1018 1020 1022 1024  554 556 558 560 -hsync -vsync (33.6 kHz eP)
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:30 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 981x554 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "981x554"x0.0   33.16  981 983 985 987  554 556 558 560 -hsync -vsync (33.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 977x594 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "977x594"x0.0   35.38  977 979 981 983  594 596 598 600 -hsync -vsync (36.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 977x594 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "977x594"x0.0   35.38  977 979 981 983  594 596 598 600 -hsync -vsync (36.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 969x634 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "969x634"x0.0   37.44  969 971 973 975  634 636 638 640 -hsync -vsync (38.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 969x634 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "969x634"x0.0   37.44  969 971 973 975  634 636 638 640 -hsync -vsync (38.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 971x674 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "971x674"x0.0   39.86  971 973 975 977  674 676 678 680 -hsync -vsync (40.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x714 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x714"x0.0   41.90  964 966 968 970  714 716 718 720 -hsync -vsync (43.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x714 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x714"x0.0   41.90  964 966 968 970  714 716 718 720 -hsync -vsync (43.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x754 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x754"x0.0   43.95  958 960 962 964  754 756 758 760 -hsync -vsync (45.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x794 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x794"x0.0   46.36  960 962 964 966  794 796 798 800 -hsync -vsync (48.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 962x834 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "962x834"x0.0   48.78  962 964 966 968  834 836 838 840 -hsync -vsync (50.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 962x834 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "962x834"x0.0   48.78  962 964 966 968  834 836 838 840 -hsync -vsync (50.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x874 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x874"x0.0   51.21  964 966 968 970  874 876 878 880 -hsync -vsync (52.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x874 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x874"x0.0   51.21  964 966 968 970  874 876 878 880 -hsync -vsync (52.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x914 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x914"x0.0   53.21  958 960 962 964  914 916 918 920 -hsync -vsync (55.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x954 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x954"x0.0   55.64  960 962 964 966  954 956 958 960 -hsync -vsync (57.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x954 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x954"x0.0   55.64  960 962 964 966  954 956 958 960 -hsync -vsync (57.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x994 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x994"x0.0   57.84  958 960 962 964  994 996 998 1000 -hsync -vsync (60.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x994 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x994"x0.0   57.84  958 960 962 964  994 996 998 1000 -hsync -vsync (60.0 kHz eP)
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:35 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:36 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 958x634 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "958x634"x0.0   37.01  958 960 962 964  634 636 638 640 -hsync -vsync (38.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x609 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x609"x0.0   35.64  960 962 964 966  609 611 613 615 -hsync -vsync (36.9 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x583 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x583"x0.0   34.13  960 962 964 966  583 585 587 589 -hsync -vsync (35.3 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 960x583 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "960x583"x0.0   34.13  960 962 964 966  583 585 587 589 -hsync -vsync (35.3 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 962x572 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "962x572"x0.0   33.57  962 964 966 968  572 574 576 578 -hsync -vsync (34.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x551 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x551"x0.0   32.41  964 966 968 970  551 553 555 557 -hsync -vsync (33.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 964x551 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "964x551"x0.0   32.41  964 966 968 970  551 553 555 557 -hsync -vsync (33.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 966x538 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "966x538"x0.0   31.72  966 968 970 972  538 540 542 544 -hsync -vsync (32.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 968x524 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "968x524"x0.0   30.97  968 970 972 974  524 526 528 530 -hsync -vsync (31.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 968x514 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "968x514"x0.0   30.38  968 970 972 974  514 516 518 520 -hsync -vsync (31.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 970x509 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "970x509"x0.0   30.15  970 972 974 976  509 511 513 515 -hsync -vsync (30.9 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 970x507 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "970x507"x0.0   30.04  970 972 974 976  507 509 511 513 -hsync -vsync (30.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 972x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "972x506"x0.0   30.04  972 974 976 978  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 974x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "974x506"x0.0   30.10  974 976 978 980  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 974x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "974x506"x0.0   30.10  974 976 978 980  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 976x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "976x546"x0.0   32.52  976 978 980 982  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 976x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "976x506"x0.0   30.16  976 978 980 982  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 978x546 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "978x546"x0.0   32.59  978 980 982 984  546 548 550 552 -hsync -vsync (33.1 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 980x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "980x506"x0.0   30.28  980 982 984 986  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 982x487 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "982x487"x0.0   29.22  982 984 986 988  487 489 491 493 -hsync -vsync (29.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 984x524 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "984x524"x0.0   31.48  984 986 988 990  524 526 528 530 -hsync -vsync (31.8 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 986x564 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "986x564"x0.0   33.92  986 988 990 992  564 566 568 570 -hsync -vsync (34.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 988x604 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "988x604"x0.0   36.38  988 990 992 994  604 606 608 610 -hsync -vsync (36.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 988x604 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "988x604"x0.0   36.38  988 990 992 994  604 606 608 610 -hsync -vsync (36.6 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 990x644 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "990x644"x0.0   38.84  990 992 994 996  644 646 648 650 -hsync -vsync (39.0 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 992x684 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "992x684"x0.0   41.31  992 994 996 998  684 686 688 690 -hsync -vsync (41.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 994x484 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "994x484"x0.0   29.40  994 996 998 1000  484 486 488 490 -hsync -vsync (29.4 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 994x484 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "994x484"x0.0   29.40  994 996 998 1000  484 486 488 490 -hsync -vsync (29.4 kHz eP)
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:41 2016: 1563: client 18 disconnected
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 994x498 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "994x498"x0.0   30.24  994 996 998 1000  498 500 502 504 -hsync -vsync (30.2 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 996x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "996x506"x0.0   30.78  996 998 1000 1002  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 996x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "996x506"x0.0   30.78  996 998 1000 1002  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=3335 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:51:42 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:55:07 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=5099 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:55:07 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=5109 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=5147 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=5150 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=5156 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=5163 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 996x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "996x506"x0.0   30.78  996 998 1000 1002  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+AUDIT: Sun Jun  5 21:55:08 2016: 1563: client 18 disconnected
+AUDIT: Sun Jun  5 21:58:18 2016: 1563: client 18 connected from local host ( uid=1000 gid=1000 pid=24275 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 395
+(II) VBoxVideo(0): EDID vendor "VBX", prod id 0
+(II) VBoxVideo(0): DDCModeFromDetailedTiming: 996x506 Warning: We only handle separate sync.
+(II) VBoxVideo(0): Using hsync ranges from config file
+(II) VBoxVideo(0): Using vrefresh ranges from config file
+(II) VBoxVideo(0): Printing DDC gathered Modelines:
+(II) VBoxVideo(0): Modeline "996x506"x0.0   30.78  996 998 1000 1002  506 508 510 512 -hsync -vsync (30.7 kHz eP)
+AUDIT: Sun Jun  5 21:58:18 2016: 1563: client 18 disconnected

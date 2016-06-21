@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+if ! [ -f kernel*.src.rpm ]; then
+        yumdownloader --source kernel
+fi
+sudo yum install -y ccache asciidoc newt-devel pesign pciutils-devel
+/usr/bin/time -o results/kernel-build-time rpmbuild --rebuild kernel*.rpm

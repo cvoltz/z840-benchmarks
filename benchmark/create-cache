@@ -1,0 +1,27 @@
+#!/bin/bash
+
+LV_TO_CACHE=home
+VG_TO_CACHE=hdd
+CACHE_DISK=/dev/nvme0n1
+
+# Size of cache metadata. Should be at least 8 MB and about 1/1000 the size of the cache data LV.
+MD_SIZE=1G
+
+# Size of cache data.
+DATA_SIZE=234G
+
+# Add PV for cache SSD to HDD VG
+#pvcreate -v $CACHE_DISK
+vgextend -v $VG_TO_CACHE $CACHE_DISK --yes
+
+# Create LV where the cache data is stored
+lvcreate -n cache -L $DATA_SIZE $VG_TO_CACHE $CACHE_DISK
+
+# Create LV where the cache metadata is stored
+lvcreate -n cache_metadata -L $MD_SIZE $VG_TO_CACHE $CACHE_DISK
+
+# Create cache pool LV from data and metadata LVs
+lvconvert --type cache-pool --poolmetadata $VG_TO_CACHE/cache_metadata $VG_TO_CACHE/cache --yes
+
+# Attach the cache pool to the VG to create the cached device
+lvconvert --type cache --cachepool $VG_TO_CACHE/cache $VG_TO_CACHE/$LV_TO_CACHE

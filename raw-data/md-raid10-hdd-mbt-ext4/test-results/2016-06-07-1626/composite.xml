@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.2.2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2016-06-07-1626</Title>
+    <LastModified>2016-06-07 19:23:12</LastModified>
+    <TestClient>Phoronix Test Suite v6.2.2 (Gamvik)</TestClient>
+    <Description>2 x Intel Xeon E5-2650 v3 testing with a HP 2129 and NVIDIA Quadro K420 2048MB on CentOS 7.2.1511 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-07 16:26:10</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel,stripe=256","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>890.69</Value>
+        <RawString>844.93:886.08:924.85:866.72:928.58:892.95</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>INITIAL_CREATE</Arguments>
+    <Description>Test: Initial Create</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>140.62</Value>
+        <RawString>132.74:142.59:146.53</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>READ_COMPILED_TREE</Arguments>
+    <Description>Test: Read Compiled Tree</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>1158.43</Value>
+        <RawString>1193.13:1147.34:1134.83</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/unpack-linux-1.0.0</Identifier>
+    <Title>Unpacking The Linux Kernel</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>linux-2.6.32.tar.bz2</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>12.37</Value>
+        <RawString>12.305953025818:12.358672857285:12.405723810196:12.421228885651</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-apache-1.5.1</Identifier>
+    <Title>Timed Apache Compilation</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>32.66</Value>
+        <RawString>32.560127973557:32.954379796982:32.45504617691</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-imagemagick-1.7.2</Identifier>
+    <Title>Timed ImageMagick Compilation</Title>
+    <AppVersion>6.9.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>26.72</Value>
+        <RawString>26.743551969528:27.041002035141:26.380748987198</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.6.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>4.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>41.24</Value>
+        <RawString>44.640459060669:41.188822031021:40.126466035843:40.574464082718:40.55144906044:40.347129821777</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-php-1.3.1</Identifier>
+    <Title>Timed PHP Compilation</Title>
+    <AppVersion>5.2.9</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>17.29</Value>
+        <RawString>17.238183021545:17.400120973587:17.230131864548</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.6.1</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, MD RAID10 HDD, MBT, EXT4, pass 2</Identifier>
+        <Value>12805.29</Value>
+        <RawString>12684.22:12966.23:12765.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

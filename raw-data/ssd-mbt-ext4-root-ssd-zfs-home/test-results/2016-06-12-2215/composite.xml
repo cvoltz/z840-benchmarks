@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.2.2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2016-06-12-2215</Title>
+    <LastModified>2016-06-13 01:32:12</LastModified>
+    <TestClient>Phoronix Test Suite v6.2.2 (Gamvik)</TestClient>
+    <Description>2 x Intel Xeon E5-2650 v3 testing with a HP 2129 and NVIDIA Quadro K420 2048MB on CentOS 7.2.1511 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: zfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-12 22:15:33</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"NOOP","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>426.33</Value>
+        <RawString>530:351.67:397.33</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>INITIAL_CREATE</Arguments>
+    <Description>Test: Initial Create</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>42.90</Value>
+        <RawString>52.64:50.36:25.69</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>READ_COMPILED_TREE</Arguments>
+    <Description>Test: Read Compiled Tree</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>154.27</Value>
+        <RawString>247.79:133.23:81.78</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/unpack-linux-1.0.0</Identifier>
+    <Title>Unpacking The Linux Kernel</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>linux-2.6.32.tar.bz2</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>14.47</Value>
+        <RawString>14.361397981644:14.837201833725:14.110965967178:14.585642814636</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-apache-1.5.1</Identifier>
+    <Title>Timed Apache Compilation</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>33.78</Value>
+        <RawString>33.651008844376:33.718513965607:33.982987880707</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-imagemagick-1.7.2</Identifier>
+    <Title>Timed ImageMagick Compilation</Title>
+    <AppVersion>6.9.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>27.27</Value>
+        <RawString>26.802373886108:28.201209068298:26.818686962128</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.6.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>4.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>46.04</Value>
+        <RawString>49.036381959915:45.609661817551:46.076414823532:44.721678972244:45.238008975983:45.584463119507</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-php-1.3.1</Identifier>
+    <Title>Timed PHP Compilation</Title>
+    <AppVersion>5.2.9</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>21.05</Value>
+        <RawString>21.11435508728:21.111301898956:20.917027950287</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.2</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Phoronix Test Suite v6.2.2</Description>
+    <Scale>s</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>25.45</Value>
+        <RawString>25.45</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.6.1</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>z840, root: MBT, EXT4, home: ZFS</Identifier>
+        <Value>11617.13</Value>
+        <RawString>11782.34:11575.83:11493.23</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

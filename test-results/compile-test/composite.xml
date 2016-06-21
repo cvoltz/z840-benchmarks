@@ -1,0 +1,1787 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.2.2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>z840 Storage Performance</Title>
+    <LastModified>2016-06-20 09:24:14</LastModified>
+    <TestClient>Phoronix Test Suite v6.2.2 (Gamvik)</TestClient>
+    <Description>Benchmarks showing compile performance for various storage configurations on a z840.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>SSD MBT XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 48128MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP P242va, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1080</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-05-19 18:19:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>SSD MBT EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 48128MB, Disk: 256GB SAMSUNG MZHPV256, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP P242va, Network: Intel I210 Gigabit Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-05-19 10:24:29</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>SSD LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-02 14:58:35</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>SSD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-01 23:24:19</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>SSD MBT btrfs</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: btrfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-12 05:33:49</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"relatime,rw,seclabel,space_cache,ssd","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>encrypted SSD LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-12 00:50:24</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>G2 LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-11 21:47:27</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>SS2+G2 LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-10 17:21:41</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-11 08:11:11</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel,sunit=1024,swidth=2048","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-11 01:34:55</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>HDD MBT EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 48128MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP P242va, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-05-20 00:16:58</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"DEADLINE","disk-mount-options":"data=ordered,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-03 03:29:56</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel,sunit=1024,swidth=2048","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-07 16:26:10</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel,stripe=256","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: xfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-08 04:34:39</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel,sunit=1024,swidth=2048","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-05 01:42:49</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel,stripe=256","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP Z32x, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 7680x2160</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-15 21:28:21</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel,stripe=256","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 1198GB Logical Volume, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-08 21:20:20</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"DEADLINE","disk-mount-options":"data=ordered,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 2 x 599GB Logical Volume, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-07 00:05:14</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: zfs, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-12 22:15:33</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"NOOP","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-05 05:58:37</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel,stripe=256","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP LP2475w, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 1920x1200</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-06-14 23:38:42</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,noatime,nodiratime,rw,seclabel,stripe=48","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>1029.29</Value>
+        <RawString>1014.82:1056.31:1016.73</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>992.33</Value>
+        <RawString>1014.91:974.66:987.41</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>1075.48</Value>
+        <RawString>1100.83:1087.39:1038.22</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>1004.74</Value>
+        <RawString>1006.37:999.43:1008.42</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>1054.79</Value>
+        <RawString>1035.04:1072.08:1057.25</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>1033.12</Value>
+        <RawString>1035.23:1038.9:1025.23</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>1037.21</Value>
+        <RawString>1029.87:1031.46:1050.3</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>1030.97</Value>
+        <RawString>1097.8:1002.56:1015.09:1011.09:1029.43:1029.84</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>996.11</Value>
+        <RawString>971.2:1003.5:1013.63</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>1008.43</Value>
+        <RawString>1072.36:1037.6:982.2:960.94:1005.63:991.82</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>985.98</Value>
+        <RawString>978.69:1001.46:977.78</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>1080.77</Value>
+        <RawString>1095.46:1092.4:1054.44</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>890.69</Value>
+        <RawString>844.93:886.08:924.85:866.72:928.58:892.95</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>1033.44</Value>
+        <RawString>990.3:1049.01:1073.55:1020.88</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>874.74</Value>
+        <RawString>880.78:873.34:870.09</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>915.97</Value>
+        <RawString>874.13:945.28:920.1:924.36</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>1002.57</Value>
+        <RawString>1006.42:995.86:1005.44</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>853.19</Value>
+        <RawString>840.7:869.86:849.01</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>426.33</Value>
+        <RawString>530:351.67:397.33</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>935.17</Value>
+        <RawString>876.23:946.25:983.04</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>840.28</Value>
+        <RawString>798.19:888.82:833.82</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>INITIAL_CREATE</Arguments>
+    <Description>Test: Initial Create</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>131.42</Value>
+        <RawString>131.34:128.39:134.53</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>151.55</Value>
+        <RawString>161.26:139.48:153.91</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>121.12</Value>
+        <RawString>131.64:121.14:110.58</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>162.28</Value>
+        <RawString>156.55:167.61:162.69</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>107.06</Value>
+        <RawString>107.48:109.76:103.94</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>134.23</Value>
+        <RawString>141.79:127.03:133.88</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>119.95</Value>
+        <RawString>122.2:117.79:119.87</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>130.74</Value>
+        <RawString>134.96:121.04:136.21</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>131.04</Value>
+        <RawString>130.2:131.28:131.65</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>118.18</Value>
+        <RawString>118.68:114.15:121.7</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>155.63</Value>
+        <RawString>164.35:158.41:144.12</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>134.52</Value>
+        <RawString>142.49:132.98:128.09</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>140.62</Value>
+        <RawString>132.74:142.59:146.53</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>134.87</Value>
+        <RawString>134.29:129.26:141.06</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>151.73</Value>
+        <RawString>144.18:153.62:157.39</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>152.75</Value>
+        <RawString>149.62:167.87:140.77</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>153.26</Value>
+        <RawString>133.73:165.44:160.61</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>138.14</Value>
+        <RawString>137.04:144.77:132.6</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>42.90</Value>
+        <RawString>52.64:50.36:25.69</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>143.27</Value>
+        <RawString>106.56:155.46:167.78</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>88.36</Value>
+        <RawString>68.23:106.79:90.05</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>READ_COMPILED_TREE</Arguments>
+    <Description>Test: Read Compiled Tree</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>1221.75</Value>
+        <RawString>1244.24:1223.19:1197.81</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>1262.94</Value>
+        <RawString>1300.56:1263.56:1224.7</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>1350.62</Value>
+        <RawString>1324.58:1380.71:1346.57</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>1362.23</Value>
+        <RawString>1337.69:1409.02:1339.99</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>1090.80</Value>
+        <RawString>1070.56:1162.14:1039.69</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>1314.76</Value>
+        <RawString>1311.16:1221.66:1411.45</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>1326.21</Value>
+        <RawString>1342.48:1331.39:1304.75</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>1302.41</Value>
+        <RawString>1245.16:1337.8:1324.28</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>1249.58</Value>
+        <RawString>1266.44:1333.37:1148.94</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>1273.29</Value>
+        <RawString>1183.57:1431.42:1204.87</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>1311.36</Value>
+        <RawString>1361.05:1300.93:1272.09</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>1278.79</Value>
+        <RawString>1409.98:1305.94:1120.44</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>1158.43</Value>
+        <RawString>1193.13:1147.34:1134.83</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>1358.50</Value>
+        <RawString>1336.77:1404.59:1334.14</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>1181.67</Value>
+        <RawString>1153.2:1202.16:1189.64</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>1306.72</Value>
+        <RawString>1190.4:1377.24:1352.51</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>1326.75</Value>
+        <RawString>1352.51:1324.58:1303.17</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>1232.64</Value>
+        <RawString>1233.23:1227.08:1237.6</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>154.27</Value>
+        <RawString>247.79:133.23:81.78</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>1288.92</Value>
+        <RawString>1328.89:1309.27:1228.59</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>1290.19</Value>
+        <RawString>1229.58:1272.81:1368.18</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/unpack-linux-1.0.0</Identifier>
+    <Title>Unpacking The Linux Kernel</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>linux-2.6.32.tar.bz2</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>11.46</Value>
+        <RawString>10.52327299118:11.807140827179:11.309363126755:11.199298143387:12.09760093689:11.117467164993:11.972503185272:11.65703701973</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>11.18</Value>
+        <RawString>11.356882095337:11.43857717514:11.051304101944:10.857378005981</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>11.41</Value>
+        <RawString>12.02867603302:11.725055932999:11.004354953766:11.103308200836:11.332630872726:11.243519067764</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>11.47</Value>
+        <RawString>11.333879947662:11.878801822662:11.332978010178:11.349847078323</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>11.97</Value>
+        <RawString>12.286545038223:11.592596054077:12.068012952805:11.945459127426</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>11.28</Value>
+        <RawString>11.204237222672:11.406086921692:11.16205906868:11.340075969696</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>11.53</Value>
+        <RawString>12.042523145676:11.283738851547:11.554538011551:11.236602067947</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>11.54</Value>
+        <RawString>11.875441074371:11.841981887817:11.372001171112:11.051122903824</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>11.20</Value>
+        <RawString>11.937386989594:10.973565816879:10.794544935226:11.226181030273:11.13574385643:11.361030101776:10.993913173676</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>11.27</Value>
+        <RawString>11.857698202133:10.47506403923:11.246093988419:11.589890956879:11.004823207855:11.402210950851:11.519317150116:11.038738965988</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>11.08</Value>
+        <RawString>11.125419139862:10.762588977814:10.669845104218:11.867797136307:10.934769153595:11.152572154999:11.025315999985:11.079871177673</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>11.34</Value>
+        <RawString>12.040381908417:11.782002925873:11.778460979462:10.867718219757:11.198074102402:11.062512874603:10.955214977264:10.997067928314</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>12.37</Value>
+        <RawString>12.305953025818:12.358672857285:12.405723810196:12.421228885651</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>11.29</Value>
+        <RawString>11.052648067474:10.803118944168:12.518189907074:11.581396102905:11.258970022202:11.554442167282:10.769388914108:10.750363111496</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>11.93</Value>
+        <RawString>11.752051830292:12.183018922806:11.804234981537:11.98929810524</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>11.14</Value>
+        <RawString>10.789474964142:11.387371063232:11.195894002914:11.174299955368</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>10.96</Value>
+        <RawString>10.883957862854:10.665953159332:11.082096815109:11.223281860352</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>11.98</Value>
+        <RawString>11.865885019302:12.911319971085:11.698209047318:12.429062843323:11.829174041748:11.243347883224:12.151662111282:11.73840212822</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>14.47</Value>
+        <RawString>14.361397981644:14.837201833725:14.110965967178:14.585642814636</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>11.89</Value>
+        <RawString>11.975829124451:12.218939065933:11.242167949677:12.095034122467:11.918896913528</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>11.16</Value>
+        <RawString>10.943630933762:11.014388084412:11.373162031174:11.314980983734</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-apache-1.5.1</Identifier>
+    <Title>Timed Apache Compilation</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>31.56</Value>
+        <RawString>31.542969942093:31.336374044418:31.788157939911</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>31.50</Value>
+        <RawString>31.694157123566:31.321033000946:31.483957052231</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>31.50</Value>
+        <RawString>31.320862054825:31.930946111679:31.257154941559</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>31.51</Value>
+        <RawString>31.512086868286:31.718293905258:31.308437108994</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>32.05</Value>
+        <RawString>32.561192989349:31.761718034744:31.819483041763</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>32.06</Value>
+        <RawString>31.817720890045:31.834784030914:32.528314828873</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>31.68</Value>
+        <RawString>31.70663690567:31.903383016586:31.415843009949</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>31.33</Value>
+        <RawString>30.943290948868:31.977788925171:31.063281059265</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>32.04</Value>
+        <RawString>31.965074062347:31.952147960663:32.208337068558</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>31.56</Value>
+        <RawString>31.337047100067:31.586521148682:31.770501852036</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>34.07</Value>
+        <RawString>33.47825717926:34.560968875885:34.180639028549</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>31.31</Value>
+        <RawString>31.52819108963:31.098794937134:31.311903953552</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>32.66</Value>
+        <RawString>32.560127973557:32.954379796982:32.45504617691</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>31.29</Value>
+        <RawString>31.352668046951:31.421844005585:31.096625804901</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>32.54</Value>
+        <RawString>32.709361076355:32.240807056427:32.655779123306</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>31.81</Value>
+        <RawString>31.4468998909:32.15775513649:31.820909976959</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>32.86</Value>
+        <RawString>32.875099897385:32.712032079697:32.995409011841</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>32.12</Value>
+        <RawString>32.358021974564:32.091881036758:31.910343885422</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>33.78</Value>
+        <RawString>33.651008844376:33.718513965607:33.982987880707</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>33.79</Value>
+        <RawString>33.13046002388:33.747380018234:34.501623153687</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>32.51</Value>
+        <RawString>32.496036052704:32.522478818893:32.504320859909</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-imagemagick-1.7.2</Identifier>
+    <Title>Timed ImageMagick Compilation</Title>
+    <AppVersion>6.9.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>27.42</Value>
+        <RawString>27.083332061768:26.878005981445:28.309356927872</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>27.03</Value>
+        <RawString>26.614528894424:27.07546710968:27.400461912155</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>27.25</Value>
+        <RawString>26.730417013168:27.545056819916:27.463160037994</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>27.16</Value>
+        <RawString>27.230955123901:27.005708932877:27.237951040268</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>26.99</Value>
+        <RawString>26.451414108276:27.194907903671:27.33061504364</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>26.98</Value>
+        <RawString>26.238676071167:27.246577978134:27.462261199951</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>26.71</Value>
+        <RawString>26.881073951721:25.949985980988:27.302711963654</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>26.86</Value>
+        <RawString>26.297582149506:27.324550867081:26.963883876801</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>27.00</Value>
+        <RawString>26.63769698143:27.008195161819:27.362198829651</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>27.17</Value>
+        <RawString>27.210191011429:26.871820926666:27.434813022614</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>27.91</Value>
+        <RawString>27.67202091217:27.9747569561:28.096446037292</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>26.56</Value>
+        <RawString>26.098484992981:26.781392097473:26.785573959351</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>26.72</Value>
+        <RawString>26.743551969528:27.041002035141:26.380748987198</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>26.44</Value>
+        <RawString>26.756911039352:26.348140001297:26.211994886398</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>27.02</Value>
+        <RawString>27.163740158081:27.299185991287:26.593111038208</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>26.35</Value>
+        <RawString>26.174361944199:26.070628881454:26.798748970032</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>27.34</Value>
+        <RawString>26.894131183624:27.717370033264:27.394207000732</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>27.33</Value>
+        <RawString>27.611842870712:26.973528146744:27.410299062729</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>27.27</Value>
+        <RawString>26.802373886108:28.201209068298:26.818686962128</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>27.81</Value>
+        <RawString>27.38560295105:27.685604095459:28.36520409584</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>27.21</Value>
+        <RawString>27.08222079277:27.210520982742:27.339070081711</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.6.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>4.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>40.03</Value>
+        <RawString>42.538761854172:39.207540988922:39.359086990356:39.101190090179:39.753266096115:40.237192869186</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>40.37</Value>
+        <RawString>42.963211774826:39.943315982819:39.463124036789:40.091637134552:39.614371061325:40.170148134232</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>39.91</Value>
+        <RawString>42.600121974945:39.416754961014:39.850307941437:38.801517009735:39.467397928238:39.309110879898</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>40.18</Value>
+        <RawString>43.103003978729:39.082783937454:39.966341018677:39.515219926834:40.012705087662:39.415721893311</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>40.66</Value>
+        <RawString>43.549041986465:39.773277044296:40.203507900238:40.052355051041:40.140879869461:40.210994005203</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>40.05</Value>
+        <RawString>42.757767915726:39.441784143448:39.267848968506:39.444854974747:39.603532075882:39.783721208572</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>40.28</Value>
+        <RawString>43.006120920181:39.302407026291:39.741544008255:39.659101009369:40.31998705864:39.638833999634</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>40.26</Value>
+        <RawString>42.249571800232:40.023448944092:39.548991918564:39.223595142365</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>40.18</Value>
+        <RawString>43.417609930038:39.591422080994:40.055820941925:39.262085914612:39.413243055344:39.347764968872</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>40.30</Value>
+        <RawString>43.025906085968:39.73014998436:39.961584091187:39.678666114807:39.748397111893:39.681939840317</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>42.57</Value>
+        <RawString>53.113418102264:40.749094009399:40.832498788834:40.418419122696:40.124176979065:40.187553882599</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>41.31</Value>
+        <RawString>49.962556838989:39.674413919449:39.11753988266:40.583666086197:39.055819034576:39.480365037918</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>41.24</Value>
+        <RawString>44.640459060669:41.188822031021:40.126466035843:40.574464082718:40.55144906044:40.347129821777</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>41.68</Value>
+        <RawString>53.388362884521:39.090596914291:39.459347009659:39.297823905945:39.098380088806:39.770529985428</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>41.20</Value>
+        <RawString>45.306054115295:39.589113950729:41.052677154541:40.496475934982:40.276151180267:40.486974954605</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>39.68</Value>
+        <RawString>41.665153026581:38.901262044907:39.016374111176:39.147585868835</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>40.82</Value>
+        <RawString>43.913386106491:39.943228006363:40.295006036758:39.949298143387:40.360198974609:40.437003135681</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>41.45</Value>
+        <RawString>43.001358032227:40.55125784874:40.806239843369</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>46.04</Value>
+        <RawString>49.036381959915:45.609661817551:46.076414823532:44.721678972244:45.238008975983:45.584463119507</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>41.40</Value>
+        <RawString>43.367822885513:40.831827878952:40.72089099884:40.698028087616</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>40.98</Value>
+        <RawString>48.324704885483:39.096244096756:39.203370094299:39.901552915573:39.846014976501:39.508245944977</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-php-1.3.1</Identifier>
+    <Title>Timed PHP Compilation</Title>
+    <AppVersion>5.2.9</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>17.78</Value>
+        <RawString>17.432734966278:18.20322394371:17.693628787994</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>18.54</Value>
+        <RawString>18.576264858246:18.609945058823:18.447451114655</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>17.62</Value>
+        <RawString>17.652968168259:17.591531038284:17.628074884415</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>18.44</Value>
+        <RawString>18.463730812073:18.521913051605:18.345616102219</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>18.93</Value>
+        <RawString>19.488643884659:18.79545712471:18.50417804718</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>18.19</Value>
+        <RawString>17.506422996521:18.613947868347:18.464326858521</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>18.15</Value>
+        <RawString>18.186021089554:17.942008972168:18.317231178284</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>17.59</Value>
+        <RawString>17.377642154694:17.745476007462:17.661769866943</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>18.90</Value>
+        <RawString>18.884994983673:18.881721019745:18.928465127945</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>19.21</Value>
+        <RawString>19.592102050781:19.163721084595:18.869744062424</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>25.27</Value>
+        <RawString>25.161494970322:24.933223009109:25.726630926132</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>16.56</Value>
+        <RawString>16.740436077118:16.353973865509:16.598450899124</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>17.29</Value>
+        <RawString>17.238183021545:17.400120973587:17.230131864548</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>16.68</Value>
+        <RawString>16.256361961365:16.917027950287:16.859529018402</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>17.79</Value>
+        <RawString>17.83140206337:17.711356878281:17.829994916916</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>17.75</Value>
+        <RawString>17.393627882004:18.032735824585:17.809206008911</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>18.17</Value>
+        <RawString>17.97725892067:18.129508018494:18.400140047073</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>17.71</Value>
+        <RawString>17.802359819412:17.71237206459:17.623068094254</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>21.05</Value>
+        <RawString>21.11435508728:21.111301898956:20.917027950287</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>18.88</Value>
+        <RawString>18.878991127014:18.864243030548:18.890686035156</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>19.81</Value>
+        <RawString>19.760735988617:19.832136869431:19.822661876678</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.6.1</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>12772.46</Value>
+        <RawString>12976.48:12865.91:12475</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>13519.77</Value>
+        <RawString>13615.31:13365.64:13578.35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>13501.86</Value>
+        <RawString>13299.47:13454.79:13751.31</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>13211.16</Value>
+        <RawString>13852.9:12747.52:12814.22:13190.71:13450.44</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>13287.76</Value>
+        <RawString>13107.9:13625.66:13129.73</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>13858.87</Value>
+        <RawString>13802.66:14065.86:13708.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>12876.86</Value>
+        <RawString>13033.12:12715.43:12882.03</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>13407.44</Value>
+        <RawString>13778.66:13312.95:13130.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>13400.04</Value>
+        <RawString>13392.07:13063.86:13744.18</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>13713.21</Value>
+        <RawString>13675.19:13870.61:13593.83</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>13130.23</Value>
+        <RawString>13064.63:13318.14:13007.92</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>12718.17</Value>
+        <RawString>12503.28:12767.55:12883.68</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>12805.29</Value>
+        <RawString>12684.22:12966.23:12765.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>12600.72</Value>
+        <RawString>12800.68:12561.88:12439.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>13577.42</Value>
+        <RawString>13232.74:13620.45:13879.07</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>13602.41</Value>
+        <RawString>13636.56:13453.74:13716.93</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>12946.94</Value>
+        <RawString>13280.55:13054.03:12506.25</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>12837.52</Value>
+        <RawString>13120.24:12639.69:12752.64</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>11617.13</Value>
+        <RawString>11782.34:11575.83:11493.23</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>12800.66</Value>
+        <RawString>12927.54:12590.98:12883.47</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>13421.24</Value>
+        <RawString>13317.72:13601.43:13344.56</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Full Linux Kernel Build</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Real time</Description>
+    <Scale>seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>2830.271</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>2861.14</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>2834.399</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>2842.183</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>2943.710</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>2930.520</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>2885.190</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>2819.680</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>2973.960</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>3165.72</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>3885.844</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>2968.79</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>2815.77</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>2659.04</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>2840.33</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>3043.990</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>2815.77</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>2884.71</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>4539.000</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>2827.98</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>3155.720</Value>
+        <RawString></RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Full Linux Kernel Build</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>User time</Description>
+    <Scale>seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>8708.108</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>8689.88</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>8708.843</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>8686.987</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>8712.080</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>8693.350</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>8668.210</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>8706.930</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>8687.750</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>8755.24</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>8870.696</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>9706.95</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>8721.75</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>8699.3</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>8756.84</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>8707.060</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>8721.75</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>8770.08</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>8945.940</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>8704.03</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>8690.610</Value>
+        <RawString></RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Full Linux Kernel Build</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Sys time</Description>
+    <Scale>seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>1463.556</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>1456.2</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>1477.818</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>1469.945</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>1548.300</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>1475.110</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>1460.530</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>1467.130</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>1471.250</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>1486.28</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>1528.073</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>1822.71</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>1480.4</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>1459.61</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>1491.41</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>1469.720</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>1480.4</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>1482.52</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>2668.750</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>1468.35</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>1459.190</Value>
+        <RawString></RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Boot time</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Total time</Description>
+    <Scale>seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SSD MBT XFS</Identifier>
+        <Value>14.205</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT EXT4</Identifier>
+        <Value>25.207</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM XFS</Identifier>
+        <Value>19.39</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD LVM EXT4</Identifier>
+        <Value>25.356</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SSD MBT btrfs</Identifier>
+        <Value>17.457</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>encrypted SSD LVM XFS</Identifier>
+        <Value>22.474</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>G2 LVM XFS</Identifier>
+        <Value>19.370</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>SS2+G2 LVM XFS</Identifier>
+        <Value>24.500</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID0 SSD LVM XFS</Identifier>
+        <Value>19.434</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID1 SSD LVM XFS</Identifier>
+        <Value>25.400</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>HDD MBT EXT4</Identifier>
+        <Value>73.656</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT XFS</Identifier>
+        <Value>27.507</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD MBT EXT4</Identifier>
+        <Value>27.525</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM XFS</Identifier>
+        <Value>16.515</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>27.492</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:lvmcache G2+MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>22.019</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID10 HDD MBT EXT4</Identifier>
+        <Value>27.525</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>LSI RAID1 HDD LVM EXT4</Identifier>
+        <Value>27.487</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:G2 LVM EXT4 home:SSD ZFS</Identifier>
+        <Value>25.450</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD home:MD RAID10 HDD LVM EXT4</Identifier>
+        <Value>27.494</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>root:SSD+G2 home:LVM RAID10 HDD LVM EXT4</Identifier>
+        <Value>27.352</Value>
+        <RawString></RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

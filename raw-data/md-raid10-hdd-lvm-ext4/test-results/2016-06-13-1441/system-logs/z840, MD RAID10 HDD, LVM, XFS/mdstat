@@ -1,0 +1,10 @@
+Personalities : [raid10] 
+md126 : active raid10 sde2[3] sdc2[1] sdd2[2] sdb3[0]
+      513024 blocks super 1.0 512K chunks 2 near-copies [4/4] [UUUU]
+      bitmap: 0/1 pages [0KB], 65536KB chunk
+
+md127 : active raid10 sde1[3] sdc1[1] sdd1[2] sdb2[0]
+      1171136512 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+      bitmap: 4/9 pages [16KB], 65536KB chunk
+
+unused devices: <none>

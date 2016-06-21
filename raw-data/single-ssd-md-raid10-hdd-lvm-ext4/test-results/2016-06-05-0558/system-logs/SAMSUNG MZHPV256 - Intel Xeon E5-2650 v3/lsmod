@@ -1,0 +1,130 @@
+Module                  Size  Used by
+tcp_lp                 12663  0 
+nls_utf8               12557  1 
+isofs                  39844  1 
+bnep                   19704  2 
+bluetooth             372944  5 bnep
+fuse                   87741  3 
+xt_CHECKSUM            12549  1 
+ipt_MASQUERADE         12678  3 
+nf_nat_masquerade_ipv4    13412  1 ipt_MASQUERADE
+tun                    27141  1 
+ip6t_rpfilter          12546  1 
+ip6t_REJECT            12939  2 
+ipt_REJECT             12541  4 
+xt_conntrack           12760  8 
+ebtable_nat            12807  0 
+ebtable_broute         12731  0 
+bridge                119562  1 ebtable_broute
+stp                    12976  1 bridge
+llc                    14552  2 stp,bridge
+ebtable_filter         12827  0 
+ebtables               30913  3 ebtable_broute,ebtable_nat,ebtable_filter
+ip6table_nat           12864  1 
+nf_conntrack_ipv6      18738  5 
+nf_defrag_ipv6         34768  1 nf_conntrack_ipv6
+nf_nat_ipv6            14131  1 ip6table_nat
+ip6table_mangle        12700  1 
+ip6table_security      12710  1 
+ip6table_raw           12683  1 
+ip6table_filter        12815  1 
+ip6_tables             27025  5 ip6table_filter,ip6table_mangle,ip6table_security,ip6table_nat,ip6table_raw
+iptable_nat            12875  1 
+nf_conntrack_ipv4      14862  5 
+nf_defrag_ipv4         12729  1 nf_conntrack_ipv4
+nf_nat_ipv4            14115  1 iptable_nat
+nf_nat                 26146  3 nf_nat_ipv4,nf_nat_ipv6,nf_nat_masquerade_ipv4
+nf_conntrack          105745  7 nf_nat,nf_nat_ipv4,nf_nat_ipv6,xt_conntrack,nf_nat_masquerade_ipv4,nf_conntrack_ipv4,nf_conntrack_ipv6
+iptable_mangle         12695  1 
+iptable_security       12705  1 
+iptable_raw            12678  1 
+iptable_filter         12810  1 
+vfat                   17411  1 
+fat                    65913  1 vfat
+intel_powerclamp       18648  0 
+coretemp               13435  0 
+intel_rapl             18773  0 
+kvm_intel             162153  0 
+kvm                   525259  1 kvm_intel
+crc32_pclmul           13113  0 
+ghash_clmulni_intel    13259  0 
+aesni_intel            69884  0 
+lrw                    13286  1 aesni_intel
+gf128mul               14951  1 lrw
+glue_helper            13990  1 aesni_intel
+ablk_helper            13597  1 aesni_intel
+cryptd                 20359  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+hp_wmi                 13945  0 
+sparse_keymap          13948  1 hp_wmi
+iTCO_wdt               13480  0 
+iTCO_vendor_support    13718  1 iTCO_wdt
+rfkill                 26536  4 hp_wmi,bluetooth
+snd_hda_codec_hdmi     47849  2 
+raid10                 47929  1 
+snd_hda_codec_realtek    80757  1 
+pcspkr                 12718  0 
+snd_hda_codec_generic    74126  1 snd_hda_codec_realtek
+snd_hda_intel          35779  10 
+sb_edac                27005  0 
+snd_hda_codec         137386  4 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_intel
+edac_core              57922  1 sb_edac
+snd_hda_core           57760  5 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel
+snd_hwdep              13608  1 snd_hda_codec
+snd_seq                66691  0 
+snd_seq_device         14356  1 snd_seq
+i2c_i801               18134  0 
+snd_pcm               105835  4 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel,snd_hda_core
+sg                     40721  0 
+lpc_ich                21073  0 
+mfd_core               13435  1 lpc_ich
+snd_timer              29639  2 snd_pcm,snd_seq
+mei_me                 18646  0 
+snd                    83425  30 snd_hda_codec_realtek,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_seq,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel,snd_seq_device
+mei                    82723  1 mei_me
+soundcore              15047  1 snd
+shpchp                 37032  0 
+tpm_infineon           17114  0 
+nfsd                  302418  1 
+auth_rpcgss            59343  1 nfsd
+nfs_acl                12837  1 nfsd
+lockd                  93600  1 nfsd
+grace                  13295  2 nfsd,lockd
+sunrpc                300464  7 nfsd,auth_rpcgss,lockd,nfs_acl
+ip_tables              27240  5 iptable_security,iptable_filter,iptable_mangle,iptable_nat,iptable_raw
+ext4                  578819  3 
+mbcache                14958  1 ext4
+jbd2                  102940  1 ext4
+usb_storage            66523  1 
+sd_mod                 45497  14 
+crc_t10dif             12714  1 sd_mod
+sr_mod                 22416  0 
+cdrom                  42556  1 sr_mod
+crct10dif_generic      12647  0 
+nouveau              1403757  4 
+video                  24400  1 nouveau
+mxm_wmi                13021  1 nouveau
+drm_kms_helper        125008  1 nouveau
+crct10dif_pclmul       14289  1 
+crct10dif_common       12595  3 crct10dif_pclmul,crct10dif_generic,crc_t10dif
+ttm                    93441  1 nouveau
+crc32c_intel           22079  0 
+serio_raw              13462  0 
+drm                   349210  7 ttm,drm_kms_helper,nouveau
+igb                   192596  0 
+ahci                   29907  3 
+e1000e                239912  0 
+libahci                32031  1 ahci
+dca                    15130  1 igb
+mpt2sas               194309  4 
+i2c_algo_bit           13413  2 igb,nouveau
+ptp                    19231  2 igb,e1000e
+libata                218730  2 ahci,libahci
+raid_class             13554  1 mpt2sas
+pps_core               19106  1 ptp
+i2c_core               40582  6 drm,igb,i2c_i801,drm_kms_helper,i2c_algo_bit,nouveau
+scsi_transport_sas     41034  1 mpt2sas
+wmi                    19070  3 hp_wmi,mxm_wmi,nouveau
+dm_mirror              22135  0 
+dm_region_hash         20862  1 dm_mirror
+dm_log                 18411  2 dm_region_hash,dm_mirror
+dm_mod                113292  11 dm_log,dm_mirror

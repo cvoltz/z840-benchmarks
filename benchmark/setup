@@ -1,0 +1,52 @@
+#!/bin/bash
+USB_DRIVE=~/z840
+mkdir results
+
+sudo cp /root/anaconda-ks.cfg results/
+sudo chown $USER:$USER results/*
+
+sudo yum install -y epel-release
+sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+sudo yum install -y glances
+
+sudo systemd-analyze time > results/boot-time
+sudo systemd-analyze blame > results/blame
+
+[ -f ~/phoronix-test-suite ] || tar xvfz $USB_DRIVE/phoronix.tar.gz
+[ -f ~/.phoronix-test-suite ] || tar xvfz $USB_DRIVE/data.tar.gz
+
+phoronix-test-suite/phoronix-test-suite network-setup <<EOF
+y
+proxy.houston.hp.com
+8080
+EOF
+
+phoronix-test-suite/phoronix-test-suite batch-setup <<EOF
+y
+n
+n
+n
+n
+n
+y
+EOF
+
+#	pts/disk \
+phoronix-test-suite/phoronix-test-suite batch-benchmark \
+        pts/apache \
+        pts/build-apache \
+	pts/build-imagemagick \
+	pts/build-linux-kernel \
+	pts/build-php \
+	pts/compilebench \
+	pts/systemd-boot-kernel \
+	pts/systemd-boot-total \
+	pts/systemd-boot-userspace \
+	pts/unpack-linux
+
+sudo sosreport --tmp-dir=results --name=cvoltz --batch
+sudo chown $USER:$USER results/*
+cp -rp ~/.phoronix-test-suite/test-results results/
+
+cp $USB_DRIVE/kernel-3.10.0-327.18.2.el7.src.rpm .
+bash $USB_DRIVE/timed-kernel-build

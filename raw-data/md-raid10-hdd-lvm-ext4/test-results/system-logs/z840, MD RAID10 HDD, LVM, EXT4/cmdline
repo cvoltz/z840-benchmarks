@@ -1,0 +1,1 @@
+BOOT_IMAGE=/vmlinuz-3.10.0-327.el7.x86_64 root=/dev/mapper/ssd-root ro crashkernel=auto rd.md.uuid=097d0aa4:4caa3a45:99e1bd28:23174f19 rd.lvm.lv=ssd/root rd.md.uuid=347e56a5:83dbaa00:ba30b588:48fefb6a rd.lvm.lv=ssd/swap rhgb quiet LANG=en_US.UTF-8

@@ -1,0 +1,26 @@
+Device: /org/freedesktop/UPower/devices/line_power_AC
+  native-path:          AC
+  power supply:         yes
+  updated:              Sun 05 Jun 2016 09:06:03 PM CDT (6623 seconds ago)
+  has history:          no
+  has statistics:       no
+  line-power
+    warning-level:       none
+    online:              yes
+    icon-name:          'ac-adapter-symbolic'
+
+Device: /org/freedesktop/UPower/devices/DisplayDevice
+  power supply:         no
+  updated:              Sun 05 Jun 2016 09:06:03 PM CDT (6623 seconds ago)
+  has history:          no
+  has statistics:       no
+  unknown
+    warning-level:       none
+    icon-name:          ''
+
+Daemon:
+  daemon-version:  0.99.2
+  on-battery:      no
+  lid-is-closed:   no
+  lid-is-present:  no
+  critical-action: HybridSleep

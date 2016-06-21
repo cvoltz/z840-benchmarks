@@ -1,0 +1,1 @@
+BOOT_IMAGE=/vmlinuz-3.10.0-327.el7.x86_64 root=/dev/mapper/hdd-root ro crashkernel=auto rd.lvm.lv=hdd/root rd.md.uuid=51428f31:e723f059:e7034c7a:842cf665 rd.md.uuid=e3ef147e:a32fb52b:2179d10d:6bef0804 rd.lvm.lv=hdd/swap rhgb quiet LANG=en_US.UTF-8
