@@ -1,0 +1,914 @@
+
+X.Org X Server 1.17.2
+Release Date: 2015-06-16
+X Protocol Version 11, Revision 0
+Build Operating System:  2.6.32-220.17.1.el6.x86_64 
+Current Operating System: Linux cvoltz.americas.hpqcorp.net 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64
+Kernel command line: BOOT_IMAGE=/vmlinuz-3.10.0-327.el7.x86_64 root=/dev/mapper/ssd-root ro crashkernel=auto rd.lvm.lv=ssd/root rd.lvm.lv=ssd/swap rhgb quiet LANG=en_US.UTF-8
+Build Date: 20 November 2015  02:44:25PM
+Build ID: xorg-x11-server 1.17.2-10.el7 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Mon Jul 11 17:10:12 2016
+(==) Using config directory: "/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+(==) ModulePath set to "/usr/lib64/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0x7fc6ae138020
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 19.0
+	X.Org XInput driver : 21.0
+	X.Org Server Extension : 9.0
+(II) xfree86: Adding drm device (/dev/dri/card0)
+(II) xfree86: Adding drm device (/dev/dri/card1)
+(--) PCI:*(0:4:0:0) 10de:0ff3:103c:1162 rev 161, Mem @ 0xd2000000/16777216, 0xc0000000/268435456, 0xd0000000/33554432, I/O @ 0x00002000/128, BIOS @ 0x????????/524288
+(--) PCI: (0:132:0:0) 10de:0ff3:103c:1162 rev 161, Mem @ 0xf2000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000f000/128, BIOS @ 0x????????/524288
+(II) LoadModule: "glx"
+(II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 9.0
+(==) AIGLX enabled
+(==) Matched nouveau as autoconfigured driver 0
+(==) Matched nouveau as autoconfigured driver 1
+(==) Matched nouveau as autoconfigured driver 2
+(==) Matched modesetting as autoconfigured driver 3
+(==) Matched fbdev as autoconfigured driver 4
+(==) Matched vesa as autoconfigured driver 5
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "nouveau"
+(II) Loading /usr/lib64/xorg/modules/drivers/nouveau_drv.so
+(II) Module nouveau: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.11
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.17.2
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 0.4.3
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) LoadModule: "vesa"
+(II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+(II) Module vesa: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 2.3.2
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 19.0
+(II) NOUVEAU driver 
+(II) NOUVEAU driver for NVIDIA chipset families :
+	RIVA TNT        (NV04)
+	RIVA TNT2       (NV05)
+	GeForce 256     (NV10)
+	GeForce 2       (NV11, NV15)
+	GeForce 4MX     (NV17, NV18)
+	GeForce 3       (NV20)
+	GeForce 4Ti     (NV25, NV28)
+	GeForce FX      (NV3x)
+	GeForce 6       (NV4x)
+	GeForce 7       (G7x)
+	GeForce 8       (G8x)
+	GeForce GTX 200 (NVA0)
+	GeForce GTX 400 (NVC0)
+(II) modesetting: Driver for Modesetting Kernel Drivers: kms
+(II) FBDEV: driver for framebuffer: fbdev
+(II) VESA: driver for VESA chipsets: vesa
+(++) using VT number 1
+
+(II) [drm] nouveau interface version: 1.2.2
+(II) [drm] nouveau interface version: 1.2.2
+(WW) Falling back to old probe method for modesetting
+(WW) Falling back to old probe method for fbdev
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 19.0
+(WW) Falling back to old probe method for vesa
+(II) Loading sub module "dri2"
+(II) LoadModule: "dri2"
+(II) Module "dri2" already built-in
+(--) NOUVEAU(0): Chipset: "NVIDIA NVE7"
+(II) NOUVEAU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) NOUVEAU(0): Depth 24, (--) framebuffer bpp 32
+(==) NOUVEAU(0): RGB weight 888
+(==) NOUVEAU(0): Default visual is TrueColor
+(==) NOUVEAU(0): Using HW cursor
+(==) NOUVEAU(0): Allowed maximum DRI level 2.
+(==) NOUVEAU(0): GLX sync to VBlank enabled.
+(==) NOUVEAU(0): Page flipping enabled
+(==) NOUVEAU(0): Swap limit set to 1 [Max allowed 2]
+(==) NOUVEAU(0): Page flipping synced to vblank by kernel.
+(II) NOUVEAU(0): Initializing outputs ...
+(II) NOUVEAU(0): Output DVI-I-1 has no monitor section
+(II) NOUVEAU(0): Output DP-1 has no monitor section
+(II) NOUVEAU(0): 2 crtcs needed for screen.
+(II) NOUVEAU(0): Allocated crtc nr. 0 to this screen.
+(II) NOUVEAU(0): Allocated crtc nr. 1 to this screen.
+(II) NOUVEAU(0): Allocated crtc nr. 2 to this screen.
+(II) NOUVEAU(0): Allocated crtc nr. 3 to this screen.
+(II) NOUVEAU(0): EDID for output DVI-I-1
+(II) NOUVEAU(0): EDID for output DP-1
+(II) NOUVEAU(0): Manufacturer: HWP  Model: 3275  Serial#: 16843009
+(II) NOUVEAU(0): Year: 2016  Week: 4
+(II) NOUVEAU(0): EDID Version: 1.4
+(II) NOUVEAU(0): Digital Display Input
+(II) NOUVEAU(0): 10 bits per channel
+(II) NOUVEAU(0): Digital interface is DisplayPort
+(II) NOUVEAU(0): Max Image Size [cm]: horiz.: 70  vert.: 39
+(II) NOUVEAU(0): Gamma: 2.20
+(II) NOUVEAU(0): DPMS capabilities: Off
+(II) NOUVEAU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+(II) NOUVEAU(0): First detailed timing is preferred mode
+(II) NOUVEAU(0): Preferred mode is native pixel format and refresh rate
+(II) NOUVEAU(0): redX: 0.674 redY: 0.316   greenX: 0.198 greenY: 0.720
+(II) NOUVEAU(0): blueX: 0.148 blueY: 0.044   whiteX: 0.313 whiteY: 0.329
+(II) NOUVEAU(0): Supported established timings:
+(II) NOUVEAU(0): 640x480@60Hz
+(II) NOUVEAU(0): 800x600@60Hz
+(II) NOUVEAU(0): 1024x768@60Hz
+(II) NOUVEAU(0): Manufacturer's mask: 0
+(II) NOUVEAU(0): Supported standard timings:
+(II) NOUVEAU(0): #0: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+(II) NOUVEAU(0): #1: hsize: 1600  vsize 900  refresh: 60  vid: 49321
+(II) NOUVEAU(0): #2: hsize: 1280  vsize 720  refresh: 60  vid: 49281
+(II) NOUVEAU(0): #3: hsize: 1920  vsize 1200  refresh: 60  vid: 209
+(II) NOUVEAU(0): #4: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+(II) NOUVEAU(0): #5: hsize: 1440  vsize 900  refresh: 60  vid: 149
+(II) NOUVEAU(0): #6: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+(II) NOUVEAU(0): #7: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+(II) NOUVEAU(0): Supported detailed timing:
+(II) NOUVEAU(0): clock: 533.2 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+(II) NOUVEAU(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2222 v_border: 0
+(II) NOUVEAU(0): Ranges: V min: 24 V max: 60 Hz, H min: 30 H max: 135 kHz, PixClock max 605 MHz
+(II) NOUVEAU(0): Monitor name: HP Z32x
+(II) NOUVEAU(0): Serial No: CNC6040DPC
+(II) NOUVEAU(0): Supported detailed timing:
+(II) NOUVEAU(0): clock: 262.8 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+(II) NOUVEAU(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2191 v_border: 0
+(II) NOUVEAU(0): Supported detailed timing:
+(II) NOUVEAU(0): clock: 241.5 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(0): h_active: 2560  h_sync: 2608  h_sync_end 2640 h_blank_end 2720 h_border: 0
+(II) NOUVEAU(0): v_active: 1440  v_sync: 1443  v_sync_end 1448 v_blanking: 1481 v_border: 0
+(II) NOUVEAU(0): Supported detailed timing:
+(II) NOUVEAU(0): clock: 209.8 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+(II) NOUVEAU(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2185 v_border: 0
+(II) NOUVEAU(0): Supported detailed timing:
+(II) NOUVEAU(0): clock: 268.5 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(0): h_active: 2560  h_sync: 2592  h_sync_end 2640 h_blank_end 2720 h_border: 0
+(II) NOUVEAU(0): v_active: 1600  v_sync: 1606  v_sync_end 1609 v_blanking: 1646 v_border: 0
+(II) NOUVEAU(0): Supported detailed timing:
+(II) NOUVEAU(0): clock: 154.0 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+(II) NOUVEAU(0): v_active: 1200  v_sync: 1203  v_sync_end 1209 v_blanking: 1235 v_border: 0
+(II) NOUVEAU(0): Number of EDID sections to follow: 1
+(II) NOUVEAU(0): EDID (in hex):
+(II) NOUVEAU(0): 	00ffffffffffff0022f0753201010101
+(II) NOUVEAU(0): 	041a0104b54627783a8d15ac5132b826
+(II) NOUVEAU(0): 	0b5054210800d1c0a9c081c0d100b300
+(II) NOUVEAU(0): 	9500a94081804dd000a0f0703e803020
+(II) NOUVEAU(0): 	3500b9882100001a000000fd00183c1e
+(II) NOUVEAU(0): 	873c000a202020202020000000fc0048
+(II) NOUVEAU(0): 	50205a3332780a2020202020000000ff
+(II) NOUVEAU(0): 	00434e43363034304450430a20200161
+(II) NOUVEAU(0): 	020318f14b101f041303120211010514
+(II) NOUVEAU(0): 	2309070783010000a36600a0f0701f80
+(II) NOUVEAU(0): 	30203500b9882100001a565e00a0a0a0
+(II) NOUVEAU(0): 	295030203500b9882100001aef5100a0
+(II) NOUVEAU(0): 	f070198030203500b9882100001ae268
+(II) NOUVEAU(0): 	00a0a0402e6020306300b9882100001c
+(II) NOUVEAU(0): 	283c80a070b0234030203600b9882100
+(II) NOUVEAU(0): 	001a000000000000000000000000003e
+(II) NOUVEAU(0): Printing probed modes for output DP-1
+(II) NOUVEAU(0): Modeline "3840x2160"x60.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x30.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x24.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x60.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x60.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.78  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  118.96  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz)
+(II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.44  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.7 kHz)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Output DVI-I-1 disconnected
+(II) NOUVEAU(0): Output DP-1 connected
+(II) NOUVEAU(0): Using exact sizes for initial modes
+(II) NOUVEAU(0): Output DP-1 using initial mode 3840x2160 +0+0
+(II) NOUVEAU(0): Using default gamma of (1.0, 1.0, 1.0) unless otherwise stated.
+(--) NOUVEAU(0): Virtual size is 3840x2160 (pitch 0)
+(**) NOUVEAU(0):  Driver mode "3840x2160": 533.2 MHz (scaled from 0.0 MHz), 133.3 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "3840x2160"x60.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(**) NOUVEAU(0):  Driver mode "3840x2160": 262.8 MHz (scaled from 0.0 MHz), 65.7 kHz, 30.0 Hz
+(II) NOUVEAU(0): Modeline "3840x2160"x30.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(**) NOUVEAU(0):  Driver mode "3840x2160": 209.8 MHz (scaled from 0.0 MHz), 52.4 kHz, 24.0 Hz
+(II) NOUVEAU(0): Modeline "3840x2160"x24.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(**) NOUVEAU(0):  Driver mode "2560x1600": 268.5 MHz (scaled from 0.0 MHz), 98.7 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "2560x1600"x60.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(**) NOUVEAU(0):  Driver mode "2560x1440": 241.5 MHz (scaled from 0.0 MHz), 88.8 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "2560x1440"x60.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(**) NOUVEAU(0):  Driver mode "1920x1200": 154.0 MHz (scaled from 0.0 MHz), 74.0 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(**) NOUVEAU(0):  Mode "1920x1080": 172.8 MHz (scaled from 0.0 MHz), 67.1 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.78  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz)
+(**) NOUVEAU(0):  Driver mode "1920x1080": 148.5 MHz (scaled from 0.0 MHz), 67.5 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+(**) NOUVEAU(0):  Driver mode "1920x1080": 148.5 MHz (scaled from 0.0 MHz), 56.2 kHz, 50.0 Hz
+(II) NOUVEAU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+(**) NOUVEAU(0):  Driver mode "1920x1080": 148.4 MHz (scaled from 0.0 MHz), 67.4 kHz, 59.9 Hz
+(II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+(**) NOUVEAU(0):  Driver mode "1920x1080i": 74.2 MHz (scaled from 0.0 MHz), 33.8 kHz, 60.0 Hz (I)
+(II) NOUVEAU(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(**) NOUVEAU(0):  Driver mode "1920x1080i": 74.2 MHz (scaled from 0.0 MHz), 28.1 kHz, 50.0 Hz (I)
+(II) NOUVEAU(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(**) NOUVEAU(0):  Driver mode "1920x1080i": 74.2 MHz (scaled from 0.0 MHz), 33.7 kHz, 59.9 Hz (I)
+(II) NOUVEAU(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+(**) NOUVEAU(0):  Driver mode "1600x1200": 162.0 MHz (scaled from 0.0 MHz), 75.0 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(**) NOUVEAU(0):  Driver mode "1680x1050": 146.2 MHz (scaled from 0.0 MHz), 65.3 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(**) NOUVEAU(0):  Mode "1600x900": 119.0 MHz (scaled from 0.0 MHz), 55.9 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  118.96  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz)
+(**) NOUVEAU(0):  Driver mode "1280x1024": 108.0 MHz (scaled from 0.0 MHz), 64.0 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(**) NOUVEAU(0):  Driver mode "1440x900": 106.5 MHz (scaled from 0.0 MHz), 55.9 kHz, 59.9 Hz
+(II) NOUVEAU(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(**) NOUVEAU(0):  Mode "1280x720": 74.4 MHz (scaled from 0.0 MHz), 44.7 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.44  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.7 kHz)
+(**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 45.0 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 37.5 kHz, 50.0 Hz
+(II) NOUVEAU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 45.0 kHz, 59.9 Hz
+(II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(**) NOUVEAU(0):  Driver mode "1024x768": 65.0 MHz (scaled from 0.0 MHz), 48.4 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(**) NOUVEAU(0):  Driver mode "800x600": 40.0 MHz (scaled from 0.0 MHz), 37.9 kHz, 60.3 Hz
+(II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(**) NOUVEAU(0):  Driver mode "720x576": 27.0 MHz (scaled from 0.0 MHz), 31.2 kHz, 50.0 Hz
+(II) NOUVEAU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(**) NOUVEAU(0):  Driver mode "720x480": 27.0 MHz (scaled from 0.0 MHz), 31.5 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(**) NOUVEAU(0):  Driver mode "720x480": 27.0 MHz (scaled from 0.0 MHz), 31.5 kHz, 59.9 Hz
+(II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(**) NOUVEAU(0):  Driver mode "640x480": 25.2 MHz (scaled from 0.0 MHz), 31.5 kHz, 60.0 Hz
+(II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(**) NOUVEAU(0):  Driver mode "640x480": 25.2 MHz (scaled from 0.0 MHz), 31.5 kHz, 59.9 Hz
+(II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(==) NOUVEAU(0): DPI set to (96, 96)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/lib64/xorg/modules/libfb.so
+(II) Module fb: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) Loading sub module "shadowfb"
+(II) LoadModule: "shadowfb"
+(II) Loading /usr/lib64/xorg/modules/libshadowfb.so
+(II) Module shadowfb: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) Loading sub module "dri2"
+(II) LoadModule: "dri2"
+(II) Module "dri2" already built-in
+(--) NOUVEAU(G0): Chipset: "NVIDIA NVE7"
+(==) NOUVEAU(G0): Depth 24, (--) framebuffer bpp 32
+(==) NOUVEAU(G0): RGB weight 888
+(==) NOUVEAU(G0): Default visual is TrueColor
+(==) NOUVEAU(G0): Using HW cursor
+(==) NOUVEAU(G0): Allowed maximum DRI level 2.
+(==) NOUVEAU(G0): GLX sync to VBlank enabled.
+(==) NOUVEAU(G0): Page flipping enabled
+(==) NOUVEAU(G0): Swap limit set to 1 [Max allowed 2]
+(==) NOUVEAU(G0): Page flipping synced to vblank by kernel.
+(II) NOUVEAU(G0): Initializing outputs ...
+(II) NOUVEAU(G0): Output DVI-I-1-2 has no monitor section
+(II) NOUVEAU(G0): Output DP-1-2 has no monitor section
+(II) NOUVEAU(G0): 2 crtcs needed for screen.
+(II) NOUVEAU(G0): Allocated crtc nr. 0 to this screen.
+(II) NOUVEAU(G0): Allocated crtc nr. 1 to this screen.
+(II) NOUVEAU(G0): Allocated crtc nr. 2 to this screen.
+(II) NOUVEAU(G0): Allocated crtc nr. 3 to this screen.
+(II) NOUVEAU(G0): EDID for output DVI-I-1-2
+(II) NOUVEAU(G0): EDID for output DP-1-2
+(II) NOUVEAU(G0): Manufacturer: HWP  Model: 3275  Serial#: 16843009
+(II) NOUVEAU(G0): Year: 2016  Week: 4
+(II) NOUVEAU(G0): EDID Version: 1.4
+(II) NOUVEAU(G0): Digital Display Input
+(II) NOUVEAU(G0): 10 bits per channel
+(II) NOUVEAU(G0): Digital interface is DisplayPort
+(II) NOUVEAU(G0): Max Image Size [cm]: horiz.: 70  vert.: 39
+(II) NOUVEAU(G0): Gamma: 2.20
+(II) NOUVEAU(G0): DPMS capabilities: Off
+(II) NOUVEAU(G0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+(II) NOUVEAU(G0): First detailed timing is preferred mode
+(II) NOUVEAU(G0): Preferred mode is native pixel format and refresh rate
+(II) NOUVEAU(G0): redX: 0.674 redY: 0.316   greenX: 0.198 greenY: 0.720
+(II) NOUVEAU(G0): blueX: 0.148 blueY: 0.044   whiteX: 0.313 whiteY: 0.329
+(II) NOUVEAU(G0): Supported established timings:
+(II) NOUVEAU(G0): 640x480@60Hz
+(II) NOUVEAU(G0): 800x600@60Hz
+(II) NOUVEAU(G0): 1024x768@60Hz
+(II) NOUVEAU(G0): Manufacturer's mask: 0
+(II) NOUVEAU(G0): Supported standard timings:
+(II) NOUVEAU(G0): #0: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+(II) NOUVEAU(G0): #1: hsize: 1600  vsize 900  refresh: 60  vid: 49321
+(II) NOUVEAU(G0): #2: hsize: 1280  vsize 720  refresh: 60  vid: 49281
+(II) NOUVEAU(G0): #3: hsize: 1920  vsize 1200  refresh: 60  vid: 209
+(II) NOUVEAU(G0): #4: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+(II) NOUVEAU(G0): #5: hsize: 1440  vsize 900  refresh: 60  vid: 149
+(II) NOUVEAU(G0): #6: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+(II) NOUVEAU(G0): #7: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+(II) NOUVEAU(G0): Supported detailed timing:
+(II) NOUVEAU(G0): clock: 533.2 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(G0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+(II) NOUVEAU(G0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2222 v_border: 0
+(II) NOUVEAU(G0): Ranges: V min: 24 V max: 60 Hz, H min: 30 H max: 135 kHz, PixClock max 605 MHz
+(II) NOUVEAU(G0): Monitor name: HP Z32x
+(II) NOUVEAU(G0): Serial No: CNC6040DV3
+(II) NOUVEAU(G0): Supported detailed timing:
+(II) NOUVEAU(G0): clock: 262.8 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(G0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+(II) NOUVEAU(G0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2191 v_border: 0
+(II) NOUVEAU(G0): Supported detailed timing:
+(II) NOUVEAU(G0): clock: 241.5 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(G0): h_active: 2560  h_sync: 2608  h_sync_end 2640 h_blank_end 2720 h_border: 0
+(II) NOUVEAU(G0): v_active: 1440  v_sync: 1443  v_sync_end 1448 v_blanking: 1481 v_border: 0
+(II) NOUVEAU(G0): Supported detailed timing:
+(II) NOUVEAU(G0): clock: 209.8 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(G0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+(II) NOUVEAU(G0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2185 v_border: 0
+(II) NOUVEAU(G0): Supported detailed timing:
+(II) NOUVEAU(G0): clock: 268.5 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(G0): h_active: 2560  h_sync: 2592  h_sync_end 2640 h_blank_end 2720 h_border: 0
+(II) NOUVEAU(G0): v_active: 1600  v_sync: 1606  v_sync_end 1609 v_blanking: 1646 v_border: 0
+(II) NOUVEAU(G0): Supported detailed timing:
+(II) NOUVEAU(G0): clock: 154.0 MHz   Image Size:  697 x 392 mm
+(II) NOUVEAU(G0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+(II) NOUVEAU(G0): v_active: 1200  v_sync: 1203  v_sync_end 1209 v_blanking: 1235 v_border: 0
+(II) NOUVEAU(G0): Number of EDID sections to follow: 1
+(II) NOUVEAU(G0): EDID (in hex):
+(II) NOUVEAU(G0): 	00ffffffffffff0022f0753201010101
+(II) NOUVEAU(G0): 	041a0104b54627783a8d15ac5132b826
+(II) NOUVEAU(G0): 	0b5054210800d1c0a9c081c0d100b300
+(II) NOUVEAU(G0): 	9500a94081804dd000a0f0703e803020
+(II) NOUVEAU(G0): 	3500b9882100001a000000fd00183c1e
+(II) NOUVEAU(G0): 	873c000a202020202020000000fc0048
+(II) NOUVEAU(G0): 	50205a3332780a2020202020000000ff
+(II) NOUVEAU(G0): 	00434e43363034304456330a2020016b
+(II) NOUVEAU(G0): 	020318f14b101f041303120211010514
+(II) NOUVEAU(G0): 	2309070783010000a36600a0f0701f80
+(II) NOUVEAU(G0): 	30203500b9882100001a565e00a0a0a0
+(II) NOUVEAU(G0): 	295030203500b9882100001aef5100a0
+(II) NOUVEAU(G0): 	f070198030203500b9882100001ae268
+(II) NOUVEAU(G0): 	00a0a0402e6020306300b9882100001c
+(II) NOUVEAU(G0): 	283c80a070b0234030203600b9882100
+(II) NOUVEAU(G0): 	001a000000000000000000000000003e
+(II) NOUVEAU(G0): Printing probed modes for output DP-1-2
+(II) NOUVEAU(G0): Modeline "3840x2160"x60.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(G0): Modeline "3840x2160"x30.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(G0): Modeline "3840x2160"x24.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(G0): Modeline "2560x1600"x60.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(G0): Modeline "2560x1440"x60.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1080"x60.0  172.78  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz)
+(II) NOUVEAU(G0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(G0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+(II) NOUVEAU(G0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(G0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(G0): Modeline "1600x900"x60.0  118.96  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz)
+(II) NOUVEAU(G0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(G0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(G0): Modeline "1280x720"x60.0   74.44  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.7 kHz)
+(II) NOUVEAU(G0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(G0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(G0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(G0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(G0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(G0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(G0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(G0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(G0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(G0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(G0): Using default gamma of (1.0, 1.0, 1.0) unless otherwise stated.
+(--) NOUVEAU(G0): Virtual size is 1024x768 (pitch 0)
+(**) NOUVEAU(G0):  Mode "3840x2160": 712.8 MHz (scaled from 0.0 MHz), 134.2 kHz, 60.0 Hz
+(II) NOUVEAU(G0): Modeline "3840x2160"x60.0  712.75  3840 4160 4576 5312  2160 2163 2168 2237 -hsync +vsync (134.2 kHz)
+(==) NOUVEAU(G0): DPI set to (96, 96)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/lib64/xorg/modules/libfb.so
+(II) Module fb: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) Loading sub module "shadowfb"
+(II) LoadModule: "shadowfb"
+(II) Loading /usr/lib64/xorg/modules/libshadowfb.so
+(II) Module shadowfb: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) UnloadModule: "modesetting"
+(II) Unloading modesetting
+(II) UnloadModule: "fbdev"
+(II) Unloading fbdev
+(II) UnloadSubModule: "fbdevhw"
+(II) Unloading fbdevhw
+(II) UnloadModule: "vesa"
+(II) Unloading vesa
+(--) Depth 24 pixmap format is 32 bpp
+(II) NOUVEAU(G0): Channel setup complete.
+(II) NOUVEAU(G0): [COPY] async initialised.
+(II) NOUVEAU(G0): Hardware support for Present enabled
+(II) NOUVEAU(G0): [DRI2] Setup complete
+(II) NOUVEAU(G0): [DRI2]   DRI driver: nouveau
+(II) NOUVEAU(G0): [DRI2]   VDPAU driver: nouveau
+(II) Loading sub module "exa"
+(II) LoadModule: "exa"
+(II) Loading /usr/lib64/xorg/modules/libexa.so
+(II) Module exa: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 2.6.0
+	ABI class: X.Org Video Driver, version 19.0
+(II) EXA(256): Driver allocated offscreen pixmaps
+(II) EXA(256): Driver registered support for the following operations:
+(II)         Solid
+(II)         Copy
+(II)         Composite (RENDER acceleration)
+(II)         UploadToScreen
+(II)         DownloadFromScreen
+(==) NOUVEAU(G0): Backing store enabled
+(==) NOUVEAU(G0): Silken mouse enabled
+(II) NOUVEAU(G0): [XvMC] Associated with Nouveau GeForce 8/9 Textured Video.
+(II) NOUVEAU(G0): [XvMC] Extension initialized.
+(==) NOUVEAU(G0): DPMS enabled
+(II) NOUVEAU(G0): RandR 1.2 enabled, ignore the following RandR disabled message.
+(II) NOUVEAU(0): Channel setup complete.
+(II) NOUVEAU(0): [COPY] async initialised.
+(II) NOUVEAU(0): Hardware support for Present enabled
+(II) NOUVEAU(0): [DRI2] Setup complete
+(II) NOUVEAU(0): [DRI2]   DRI driver: nouveau
+(II) NOUVEAU(0): [DRI2]   VDPAU driver: nouveau
+(II) Loading sub module "exa"
+(II) LoadModule: "exa"
+(II) Loading /usr/lib64/xorg/modules/libexa.so
+(II) Module exa: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 2.6.0
+	ABI class: X.Org Video Driver, version 19.0
+(II) EXA(0): Driver allocated offscreen pixmaps
+(II) EXA(0): Driver registered support for the following operations:
+(II)         Solid
+(II)         Copy
+(II)         Composite (RENDER acceleration)
+(II)         UploadToScreen
+(II)         DownloadFromScreen
+(==) NOUVEAU(0): Backing store enabled
+(==) NOUVEAU(0): Silken mouse enabled
+(II) NOUVEAU(0): [XvMC] Associated with Nouveau GeForce 8/9 Textured Video.
+(II) NOUVEAU(0): [XvMC] Extension initialized.
+(==) NOUVEAU(0): DPMS enabled
+(II) NOUVEAU(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+(--) RandR disabled
+(II) SELinux: Disabled by boolean
+(II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+(II) AIGLX: enabled GLX_ARB_create_context
+(II) AIGLX: enabled GLX_ARB_create_context_profile
+(II) AIGLX: enabled GLX_EXT_create_context_es2_profile
+(II) AIGLX: enabled GLX_INTEL_swap_event
+(II) AIGLX: enabled GLX_SGI_swap_control and GLX_MESA_swap_control
+(II) AIGLX: enabled GLX_EXT_framebuffer_sRGB
+(II) AIGLX: enabled GLX_ARB_fbconfig_float
+(II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
+(II) AIGLX: Loaded and initialized nouveau
+(II) GLX: Initialized DRI2 GL provider for screen 0
+(II) NOUVEAU(G0): NVEnterVT is called.
+(II) NOUVEAU(0): NVEnterVT is called.
+(II) NOUVEAU(0): Setting screen physical size to 1016 x 571
+resize called 3840 2160
+(II) config/udev: Adding input device Power Button (/dev/input/event1)
+(**) Power Button: Applying InputClass "evdev keyboard catchall"
+(**) Power Button: Applying InputClass "system-keyboard"
+(II) LoadModule: "evdev"
+(II) Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+(II) Module evdev: vendor="X.Org Foundation"
+	compiled for 1.17.2, module version = 2.9.2
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 21.0
+(II) Using input driver 'evdev' for 'Power Button'
+(**) Power Button: always reports core events
+(**) evdev: Power Button: Device: "/dev/input/event1"
+(--) evdev: Power Button: Vendor 0 Product 0x1
+(--) evdev: Power Button: Found keys
+(II) evdev: Power Button: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device Power Button (/dev/input/event0)
+(**) Power Button: Applying InputClass "evdev keyboard catchall"
+(**) Power Button: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'Power Button'
+(**) Power Button: always reports core events
+(**) evdev: Power Button: Device: "/dev/input/event0"
+(--) evdev: Power Button: Vendor 0 Product 0x1
+(--) evdev: Power Button: Found keys
+(II) evdev: Power Button: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/device:00/PNP0C0C:00/input/input0/event0"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event13)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event14)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device MOSART Semi. 2.4G RF Keyboard & Mouse (/dev/input/event2)
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: Applying InputClass "evdev keyboard catchall"
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'MOSART Semi. 2.4G RF Keyboard & Mouse'
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: always reports core events
+(**) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Device: "/dev/input/event2"
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Vendor 0x3938 Product 0x1032
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found keys
+(II) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/input/input2/event2"
+(II) XINPUT: Adding extended input device "MOSART Semi. 2.4G RF Keyboard & Mouse" (type: KEYBOARD, id 8)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device MOSART Semi. 2.4G RF Keyboard & Mouse (/dev/input/event3)
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: Applying InputClass "evdev pointer catchall"
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: Applying InputClass "evdev keyboard catchall"
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'MOSART Semi. 2.4G RF Keyboard & Mouse'
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: always reports core events
+(**) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Device: "/dev/input/event3"
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Vendor 0x3938 Product 0x1032
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found 9 mouse buttons
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found scroll wheel(s)
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found relative axes
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found x and y relative axes
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found absolute axes
+(II) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Forcing absolute x/y axes to exist.
+(--) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Found keys
+(II) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Configuring as mouse
+(II) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Configuring as keyboard
+(II) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: Adding scrollwheel support
+(**) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: YAxisMapping: buttons 4 and 5
+(**) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.1/input/input3/event3"
+(II) XINPUT: Adding extended input device "MOSART Semi. 2.4G RF Keyboard & Mouse" (type: KEYBOARD, id 9)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+(II) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: initialized for relative axes.
+(WW) evdev: MOSART Semi. 2.4G RF Keyboard & Mouse: ignoring absolute axes.
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: (accel) keeping acceleration scheme 1
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: (accel) acceleration profile 0
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: (accel) acceleration factor: 2.000
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device MOSART Semi. 2.4G RF Keyboard & Mouse (/dev/input/mouse0)
+(**) MOSART Semi. 2.4G RF Keyboard & Mouse: Applying InputClass "system-keyboard"
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event5)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event6)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Line (/dev/input/event7)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Line Out (/dev/input/event8)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event9)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event11)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event12)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device PC Speaker (/dev/input/event4)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event10)
+(**) HP WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+(**) HP WMI hotkeys: Applying InputClass "system-keyboard"
+(II) Using input driver 'evdev' for 'HP WMI hotkeys'
+(**) HP WMI hotkeys: always reports core events
+(**) evdev: HP WMI hotkeys: Device: "/dev/input/event10"
+(--) evdev: HP WMI hotkeys: Vendor 0 Product 0
+(--) evdev: HP WMI hotkeys: Found keys
+(II) evdev: HP WMI hotkeys: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/virtual/input/input10/event10"
+(II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 10)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_layout" "us"
+AUDIT: Mon Jul 11 17:10:12 2016: 4007: client 1 connected from local host ( uid=0 gid=0 pid=4012 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:12 2016: 4007: client 1 disconnected
+AUDIT: Mon Jul 11 17:10:12 2016: 4007: client 1 connected from local host ( uid=0 gid=0 pid=4014 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:12 2016: 4007: client 1 disconnected
+AUDIT: Mon Jul 11 17:10:12 2016: 4007: client 1 connected from local host ( uid=0 gid=0 pid=2631 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 2 connected from local host ( uid=42 gid=42 pid=4032 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 connected from local host ( uid=42 gid=42 pid=4035 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 connected from local host ( uid=42 gid=42 pid=4037 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 connected from local host ( uid=42 gid=42 pid=4037 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 connected from local host ( uid=42 gid=42 pid=4035 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 4 connected from local host ( uid=42 gid=42 pid=4045 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 4 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 4 connected from local host ( uid=42 gid=42 pid=4045 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 5 connected from local host ( uid=42 gid=42 pid=4045 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 6 connected from local host ( uid=42 gid=42 pid=4046 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 6 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 connected from local host ( uid=42 gid=42 pid=4055 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 3 connected from local host ( uid=42 gid=42 pid=4055 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 6 connected from local host ( uid=42 gid=42 pid=4055 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 6 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 6 connected from local host ( uid=42 gid=42 pid=4114 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+(II) NOUVEAU(0): EDID vendor "HWP", prod id 12917
+(II) NOUVEAU(0): Using EDID range info for horizontal sync
+(II) NOUVEAU(0): Using EDID range info for vertical refresh
+(II) NOUVEAU(0): Printing DDC gathered Modelines:
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x0.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x0.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x0.0  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+(II) NOUVEAU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+(II) NOUVEAU(0): EDID vendor "HWP", prod id 12917
+(II) NOUVEAU(0): Using hsync ranges from config file
+(II) NOUVEAU(0): Using vrefresh ranges from config file
+(II) NOUVEAU(0): Printing DDC gathered Modelines:
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x0.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x0.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x0.0  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+(II) NOUVEAU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 7 connected from local host ( uid=42 gid=42 pid=4055 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 7 disconnected
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 7 connected from local host ( uid=42 gid=42 pid=4129 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 7 disconnected
+(II) NOUVEAU(0): EDID vendor "HWP", prod id 12917
+(II) NOUVEAU(0): Using hsync ranges from config file
+(II) NOUVEAU(0): Using vrefresh ranges from config file
+(II) NOUVEAU(0): Printing DDC gathered Modelines:
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x0.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x0.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x0.0  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+(II) NOUVEAU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+(II) NOUVEAU(0): EDID vendor "HWP", prod id 12917
+(II) NOUVEAU(0): Using hsync ranges from config file
+(II) NOUVEAU(0): Using vrefresh ranges from config file
+(II) NOUVEAU(0): Printing DDC gathered Modelines:
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x0.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x0.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x0.0  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+(II) NOUVEAU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+resize called 7680 2160
+resize called 3840 2160
+AUDIT: Mon Jul 11 17:10:13 2016: 4007: client 7 connected from local host ( uid=42 gid=42 pid=4114 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:14 2016: 4007: client 8 connected from local host ( uid=42 gid=42 pid=4114 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:14 2016: 4007: client 8 disconnected
+AUDIT: Mon Jul 11 17:10:14 2016: 4007: client 8 connected from local host ( uid=42 gid=42 pid=4114 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:14 2016: 4007: client 8 disconnected
+AUDIT: Mon Jul 11 17:10:14 2016: 4007: client 8 connected from local host ( uid=42 gid=42 pid=4138 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:14 2016: 4007: client 8 disconnected
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 8 connected from local host ( uid=42 gid=42 pid=4182 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 9 connected from local host ( uid=42 gid=42 pid=4182 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 9 disconnected
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 9 connected from local host ( uid=42 gid=42 pid=4114 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 9 disconnected
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 9 connected from local host ( uid=42 gid=42 pid=4194 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 10 connected from local host ( uid=42 gid=42 pid=4194 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:16 2016: 4007: client 10 disconnected
+(II) NOUVEAU(0): EDID vendor "HWP", prod id 12917
+(II) NOUVEAU(0): Using hsync ranges from config file
+(II) NOUVEAU(0): Using vrefresh ranges from config file
+(II) NOUVEAU(0): Printing DDC gathered Modelines:
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x0.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x0.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x0.0  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+(II) NOUVEAU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+(II) NOUVEAU(0): EDID vendor "HWP", prod id 12917
+(II) NOUVEAU(0): Using hsync ranges from config file
+(II) NOUVEAU(0): Using vrefresh ranges from config file
+(II) NOUVEAU(0): Printing DDC gathered Modelines:
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+(II) NOUVEAU(0): Modeline "3840x2160"x0.0  209.75  3840 3888 3920 4000  2160 2163 2168 2185 +hsync -vsync (52.4 kHz e)
+(II) NOUVEAU(0): Modeline "2560x1600"x0.0  268.50  2560 2592 2640 2720  1600 1606 1609 1646 -hsync +vsync (98.7 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+(II) NOUVEAU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+(II) NOUVEAU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x60.0  172.80  1920 2040 2248 2576  1080 1081 1084 1118 -hsync +vsync (67.1 kHz e)
+(II) NOUVEAU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1200"x0.0  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+(II) NOUVEAU(0): Modeline "1680x1050"x0.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+(II) NOUVEAU(0): Modeline "1440x900"x0.0  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+(II) NOUVEAU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+(II) NOUVEAU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+(II) NOUVEAU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+(II) NOUVEAU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+(II) NOUVEAU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+(II) NOUVEAU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+(II) NOUVEAU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+AUDIT: Mon Jul 11 17:10:17 2016: 4007: client 10 connected from local host ( uid=42 gid=42 pid=4055 )
+  Auth name: MIT-MAGIC-COOKIE-1 ID: 817
+AUDIT: Mon Jul 11 17:10:17 2016: 4007: client 10 disconnected

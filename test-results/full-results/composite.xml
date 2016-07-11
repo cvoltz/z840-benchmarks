@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>Storage Performance</Title>
-    <LastModified>2016-06-20 09:29:07</LastModified>
+    <LastModified>2016-07-11 14:27:06</LastModified>
     <TestClient>Phoronix Test Suite v6.2.2 (Gamvik)</TestClient>
     <Description>Benchmarks showing compile performance for various storage configurations on an 8570w, a z840, and VirtualBox VMs running on a z840.</Description>
     <Notes></Notes>
@@ -90,6 +90,16 @@
     <TestClientVersion></TestClientVersion>
     <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"attr2,inode64,noquota,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>6 SSD LVM EXT4</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129 v1.01, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 6 x 800GB VK0800JEABE, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP Z32x, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Driver: nouveau 1.0.11, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 3840x2160</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-07-11 17:11:44</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw,seclabel","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
   </System>
   <System>
     <Identifier>MD RAID0 SSD LVM XFS</Identifier>
@@ -312,6 +322,11 @@
         <RawString>1097.8:1002.56:1015.09:1011.09:1029.43:1029.84</RawString>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>1022.53</Value>
+        <RawString>996.07:1066.89:1011.05:1016.12</RawString>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>996.11</Value>
         <RawString>971.2:1003.5:1013.63</RawString>
@@ -447,6 +462,11 @@
         <Identifier>SS2+G2 LVM XFS</Identifier>
         <Value>130.74</Value>
         <RawString>134.96:121.04:136.21</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>158.41</Value>
+        <RawString>132.4:176.79:166.03</RawString>
       </Entry>
       <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
@@ -586,6 +606,11 @@
         <RawString>1245.16:1337.8:1324.28</RawString>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>1381.28</Value>
+        <RawString>1305.41:1420.49:1417.94</RawString>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>1249.58</Value>
         <RawString>1266.44:1333.37:1148.94</RawString>
@@ -721,6 +746,11 @@
         <Identifier>SS2+G2 LVM XFS</Identifier>
         <Value>11.54</Value>
         <RawString>11.875441074371:11.841981887817:11.372001171112:11.051122903824</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>10.77</Value>
+        <RawString>11.473545074463:10.749717950821:10.649078845978:10.536890029907:10.623576879501:10.613969087601</RawString>
       </Entry>
       <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
@@ -860,6 +890,11 @@
         <RawString>30.943290948868:31.977788925171:31.063281059265</RawString>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>31.47</Value>
+        <RawString>31.65504693985:31.370620012283:31.376435995102</RawString>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>32.04</Value>
         <RawString>31.965074062347:31.952147960663:32.208337068558</RawString>
@@ -997,6 +1032,11 @@
         <RawString>26.297582149506:27.324550867081:26.963883876801</RawString>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>26.40</Value>
+        <RawString>26.15965795517:26.906175851822:26.138652086258</RawString>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>27.00</Value>
         <RawString>26.63769698143:27.008195161819:27.362198829651</RawString>
@@ -1132,6 +1172,11 @@
         <Identifier>SS2+G2 LVM XFS</Identifier>
         <Value>40.26</Value>
         <RawString>42.249571800232:40.023448944092:39.548991918564:39.223595142365</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>39.42</Value>
+        <RawString>42.179946899414:38.724591016769:38.912855863571:38.849612951279:39.064124822617:38.802113056183</RawString>
       </Entry>
       <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
@@ -1276,6 +1321,12 @@
         <Identifier>SS2+G2 LVM XFS</Identifier>
         <Value>17.59</Value>
         <RawString>17.377642154694:17.745476007462:17.661769866943</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>16.19</Value>
+        <RawString>16.095405101776:16.335187911987:16.136898040771</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
       </Entry>
       <Entry>
@@ -1441,6 +1492,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>13318.64</Value>
+        <RawString>13503.62:13114.85:13337.44</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>13400.04</Value>
         <RawString>13392.07:13063.86:13744.18</RawString>
@@ -1595,6 +1652,11 @@
         <RawString></RawString>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>2295.400</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>2973.960</Value>
         <RawString></RawString>
@@ -1729,6 +1791,11 @@
       <Entry>
         <Identifier>SS2+G2 LVM XFS</Identifier>
         <Value>8706.930</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>8645.12</Value>
         <RawString></RawString>
       </Entry>
       <Entry>
@@ -1869,6 +1936,11 @@
         <RawString></RawString>
       </Entry>
       <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>1441.93</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
         <Identifier>MD RAID0 SSD LVM XFS</Identifier>
         <Value>1471.250</Value>
         <RawString></RawString>
@@ -2003,6 +2075,11 @@
       <Entry>
         <Identifier>SS2+G2 LVM XFS</Identifier>
         <Value>24.500</Value>
+        <RawString></RawString>
+      </Entry>
+      <Entry>
+        <Identifier>6 SSD LVM EXT4</Identifier>
+        <Value>31.608</Value>
         <RawString></RawString>
       </Entry>
       <Entry>
