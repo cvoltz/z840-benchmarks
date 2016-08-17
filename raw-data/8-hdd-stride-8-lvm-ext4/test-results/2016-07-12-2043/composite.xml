@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.2.2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>2016-07-12-2043</Title>
+    <LastModified>2016-07-12 21:45:00</LastModified>
+    <TestClient>Phoronix Test Suite v6.2.2 (Gamvik)</TestClient>
+    <Description>2 x Intel Xeon E5-2650 v3 testing with a HP 2129 v1.01 and NVIDIA Quadro K420 2048MB on CentOS 7.2.1511 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2650 v3 @ 3.00GHz (40 Cores), Motherboard: HP 2129 v1.01, Chipset: Intel Xeon E7 v3/Xeon, Memory: 64512MB, Disk: 256GB SAMSUNG MZHPV256 + 600GB Seagate ST600MP0035 + 4 x 300GB EG0300FBDSP + 3 x 600GB HUC156060CS4204, Graphics: NVIDIA Quadro K420 2048MB, Audio: Realtek ALC221, Monitor: HP Z32x, Network: Intel Connection</Hardware>
+    <Software>OS: CentOS 7.2.1511, Kernel: 3.10.0-327.el7.x86_64 (x86_64), Desktop: GNOME Shell 3.14.4, Display Server: X Server 1.17.2, Display Driver: nouveau 1.0.11, OpenGL: 3.3 Mesa 10.6.5 Gallium 0.4, Compiler: GCC 4.8.5 20150623, File-System: ext4, Screen Resolution: 7680x2160</Software>
+    <User>cvoltz</User>
+    <TimeStamp>2016-07-12 20:43:24</TimeStamp>
+    <TestClientVersion>6.2.2</TestClientVersion>
+    <Notes>Python 2.7.5. SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=x86-64 --with-linker-hash-style=gnu --with-tune=generic","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,noatime,nodiratime,rw,seclabel,stripe=8","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>974.66</Value>
+        <RawString>950.54:1004.91:968.53</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>INITIAL_CREATE</Arguments>
+    <Description>Test: Initial Create</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>155.34</Value>
+        <RawString>140.07:161.26:164.69</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>READ_COMPILED_TREE</Arguments>
+    <Description>Test: Read Compiled Tree</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>1443.17</Value>
+        <RawString>1428.7:1481.54:1419.27</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/unpack-linux-1.0.0</Identifier>
+    <Title>Unpacking The Linux Kernel</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>linux-2.6.32.tar.bz2</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>11.26</Value>
+        <RawString>11.347187995911:11.633015155792:10.72217297554:11.333634138107</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-apache-1.5.1</Identifier>
+    <Title>Timed Apache Compilation</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>32.65</Value>
+        <RawString>33.093300104141:32.592348098755:32.275204896927</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-imagemagick-1.7.2</Identifier>
+    <Title>Timed ImageMagick Compilation</Title>
+    <AppVersion>6.9.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>26.35</Value>
+        <RawString>26.25001502037:26.490514993668:26.301407814026</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.6.0</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>4.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>39.61</Value>
+        <RawString>42.337423086166:39.310169935226:39.026146173477:38.922806024551:39.100055932999:38.983608961105</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-php-1.3.1</Identifier>
+    <Title>Timed PHP Compilation</Title>
+    <AppVersion>5.2.9</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>19.74</Value>
+        <RawString>19.556798934937:19.675405025482:19.991990089417</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.3</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments>kernel</Arguments>
+    <Description>Test: Kernel</Description>
+    <Scale>s</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>46186</Value>
+        <RawString>46186</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.3</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments>loader</Arguments>
+    <Description>Test: Loader</Description>
+    <Scale>s</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>9407</Value>
+        <RawString>9407</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.3</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments>firmware</Arguments>
+    <Description>Test: Firmware</Description>
+    <Scale>s</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>2066</Value>
+        <RawString>2066</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/systemd-boot-total-1.0.3</Identifier>
+    <Title>Systemd Total Boot Time</Title>
+    <AppVersion></AppVersion>
+    <Arguments>userspace</Arguments>
+    <Description>Test: Userspace</Description>
+    <Scale>s</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>57660</Value>
+        <RawString>57660</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.6.1</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>SAMSUNG MZHPV256 - Intel Xeon E5-2650 v3</Identifier>
+        <Value>13107.63</Value>
+        <RawString>13582.23:12896.57:12844.09</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
