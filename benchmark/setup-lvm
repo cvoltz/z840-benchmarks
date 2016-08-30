@@ -1,0 +1,17 @@
+#!/bin/bash
+drives="[cdefbghi]"
+
+# stripes=4 only uses half of the 558.91G drives since it isn't smart about how
+# it mirrors the drives
+# stripes=2 uses the fully hard drive capacity
+pvcreate --verbose /dev/sd$drives
+vgcreate --verbose hdd /dev/sd$drives
+lvcreate \
+  --type raid10 \
+  --stripes 2 \
+  --mirrors 1 \
+  --monitor y \
+  --nosync \
+  --extents 100%FREE \
+  --name home \
+  hdd
