@@ -1,0 +1,3 @@
+#!/bin/bash
+mkfs.ext4 -m 0 -L home -v -T huge /dev/mapper/hdd-home
+echo "/dev/mapper/hdd-home    /home                   ext4   defaults,noatime,nodiratime 1 2" >> /etc/fstab
